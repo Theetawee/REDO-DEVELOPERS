@@ -6,7 +6,7 @@ from django.db import models
 class Testimony(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField(upload_to="testimonies/")
+    image = models.ImageField(upload_to="testimonies/", blank=True, null=True)
     rating = models.IntegerField(default=0)
     title = models.CharField(max_length=255)
 
