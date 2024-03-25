@@ -1,16 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-import os
-from django.template import loader
-from pathlib import Path
-from django.views.generic import View
-
-
-
-
-
+from .models import Testimony
 
 
 # Create your views here.
 def index(request):
-    return render(request, "main/index.html")
+    testimonies = Testimony.objects.all()
+    context = {"testimonies": testimonies}
+    return render(request, "main/index.html", context)
