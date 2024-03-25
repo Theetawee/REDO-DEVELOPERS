@@ -27,7 +27,7 @@ CLOUDINARY_STORAGE = {
 
 DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
-STATIC_URL = os.environ.get("STATIC_URL")
+STATIC_URL = os.environ.get("https://files.redodevelopers.site/")
 
 BACKUP_DIRECTORY = os.path.join(BASE_DIR, "backups/production")
 
