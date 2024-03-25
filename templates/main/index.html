@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %} {% block content %}
+
+<section>
+  <div class="h-screen  flex items-center justify-center">
+    {% include 'partials/video.html' %}
+    <div class="z-10 bg-black/50 h-full w-full flex items-center justify-center absolute">
+        
+            <div class="text-center max-w-4xl mx-auto"><p class="text-white text-4xl mb-6"><span class="text-primary-400">Better Software</span> = Better <span class="text-primary-400 inline-flex items-center font-medium">Life</span> </p><h1 class="text-white text-5xl font-bold mb-6">Welcome to Redo Developers Inc.</h1><p class="text-white text-lg italic mb-8">— Home to the most efficient and innovative software solutions built for success.</p><div class="flex items-center justify-center"><button class="outline-none border-0"><a class="border rounded hover:bg-white/10 border-white text-white px-6 py-2.5 text-lg font-medium" href="/contact">Contact us</a></button><button class="outline-none border-0"><a class="py-2.5 hidden sm:block px-6 bg-primary-400 text-white ml-6 text-lg font-medium rounded hover:bg-primary-500/80" href="/products">Services and Products</a></button></div></div>
+    </div>
+  </div>
+</section>
+
+ffff {% endblock %}
