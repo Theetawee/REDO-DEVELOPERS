@@ -1,8 +1,56 @@
 {% load static %}
-<link rel="shortcut icon" href="" type="image/x-icon">
-<link rel="shortcut icon" href="" type="image/svg+xml">
-<link rel="icon" type="image/png" sizes="32x32" href="">
+<link
+  rel="icon"
+  type="image/svg+xml"
+  href="{% static 'images/logo.svg' %}" />
+<link
+  rel="shortcut icon"
+  href="{% static 'images/favicon.ico' %}"
+  type="image/x-icon" />
+<meta
+  property="og:image"
+  content="{% static 'images/logo.png' %}" />
+<meta
+  property="og:title"
+  content="{{title}}" />
+<meta
+  property="og:description"
+  content="{{description}}" />
+<meta property="og:url" content="{{request.build_absolute_uri}}" />
+<meta property="og:type" content="website" />
+<meta property="og:determiner" content="the" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:site_name" content="Redo Developers Inc." />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta
+  property="og:image:alt"
+  content="Welcome to Redo Developers Inc. banner" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:site" content="@redodevs" />
+<meta
+  property="twitter:title"
+  content="{{title}}" />
+<meta
+  property="twitter:description"
+  content="{{description}" />
+<meta
+  property="twitter:image"
+  content="{% static 'images/logo.png' %}" />
+<meta property="twitter:creator" content="@theetawee" />
+<meta
+  property="twitter:image:alt"
+  content="Welcome to Redo Developers Inc. banner" />
+<meta property="url" content="{{request.build_absolute_uri}}" />
+<meta property="identifier-URL" content="{{request.build_absolute_uri}}" />
+<meta
+  name="robots"
+  content="follow, index, max-snippet:-1, max-image-preview:standard, max-video-preview:-1" />
+<title>
+  {{title}}
+</title>
+
 <meta name="language" content="en" />
 <meta property="og:url" content="{{request.build_absolute_uri}}" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="">
