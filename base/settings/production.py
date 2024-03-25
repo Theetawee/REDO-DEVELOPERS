@@ -3,14 +3,18 @@ from base.settings.base import *
 DEBUG = False
 
 
+# Replace the DATABASES section of your settings.py with this
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "neondb",
-        "USER": "foreverinc",
-        "PASSWORD": os.environ.get("DB_PASSWORD"),
-        "HOST": "ep-blue-violet-792186.us-east-2.aws.neon.tech",
-        "PORT": "5432",
+        "NAME": os.environ.get("PGDATABASE"),
+        "USER": os.environ.get("PGUSER"),
+        "PASSWORD": os.environ.get("PGPASSWORD"),
+        "HOST": os.environ.get("PGHOST"),
+        "PORT": os.environ.get("PGPORT", 5432),
+        "OPTIONS": {
+            "sslmode": "require",
+        },
     }
 }
 
