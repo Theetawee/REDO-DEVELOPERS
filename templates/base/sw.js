@@ -8,13 +8,13 @@ importScripts(
 
 self.__WB_DISABLE_DEV_LOGS = true;
 
-const offlineFallbackPage = "/offline";
+const offlineFallbackPage = "/offline/";
 
 workbox.core.skipWaiting();
 
 workbox.core.clientsClaim();
 
-workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
+// workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
 
 self.addEventListener("install", async (event) => {
   event.waitUntil(
