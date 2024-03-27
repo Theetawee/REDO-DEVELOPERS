@@ -1,140 +1,66 @@
 {
-	"{% load static %}": "",
-	"name": "Redo Developers",
-	"short_name": "Redo Developers",
-	"start_url": "/",
-	"theme_color": "#1a1a1a",
-	"scope": "/",
-	"prefer_related_applications": false,
-	"launch_handler": {
-		"client_mode": "navigate-existing"
-	},
-	"lang": "en",
-	"orientation": "portrait",
-	"background_color": "#ffff",
-	"display_override": ["fullscreen", "window-controls-overlay"],
-	"categories": [
-		"software"
-	],
-	"description": "Redo Developers is a leading software development company, specializing in innovative solutions for businesses and individuals. With our team of experienced developers, we create custom software applications, websites, and mobile apps tailored to meet the unique needs of our clients. Our commitment to excellence and customer satisfaction sets us apart as a trusted partner in digital innovation.",
-	"display": "fullscreen",
-	"id": "/",
-	"icons": [
-		{
-			"src": "{% static 'images/logo.png' %}",
-			"sizes": "72x72",
-			"type": "image/png",
-			"purpose": "any"
-		},
-		{
-			"src": "{% static 'images/logo.png' %}",
-			"sizes": "96x96",
-			"type": "image/png",
-			"purpose": "any"
-		},
-		{
-			"src": "{% static 'images/logo.png' %}",
-			"sizes": "128x128",
-			"type": "image/png",
-			"purpose": "any"
-		},
-		{
-			"src": "{% static 'images/logo.png' %}",
-			"sizes": "144x144",
-			"type": "image/png",
-			"purpose": "any"
-		},
-		{
-			"src": "{% static 'images/logo.png' %}",
-			"sizes": "152x152",
-			"type": "image/png",
-			"purpose": "any"
-		},
-		{
-			"src": "{% static 'images/logo.png' %}",
-			"sizes": "192x192",
-			"type": "image/png",
-			"purpose": "any"
-		},
-		{
-			"src": "{% static 'images/logo.png' %}",
-			"sizes": "512x512",
-			"type": "image/png",
-			"purpose": "any"
-		},
-		{
-			"src": "{% static 'images/logo.png' %}",
-			"sizes": "192x192",
-			"type": "image/png",
-			"purpose": "maskable"
-		},
-		{
-			"src": "{% static 'images/logo.png' %}",
-			"sizes": "512x512",
-			"type": "image/png",
-			"purpose": "maskable"
-		}
-	],
-	"screenshots": [
-		{
-			"src": "{% static 'images/screenshot1.jpg' %}",
-			"sizes": "1080x1920",
-			"type": "image/jpg"
-		},
-		{
-			"src": "{% static 'images/screenshot2.jpg' %}",
-			"sizes": "1080x1920",
-			"type": "image/jpg"
-		}
-	],
+  "{% load static %}": "",
+  "name": "Redo Developers",
+  "short_name": "Redo Developers",
+  "start_url": "/",
+  "theme_color": "#1a1a1a",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "lang": "en",
+  "orientation": "portrait",
+  "background_color": "#ffff",
+  "display_override": ["fullscreen", "window-controls-overlay"],
+  "categories": ["software"],
+  "description": "Redo Developers is a leading software development company, specializing in innovative solutions for businesses and individuals. With our team of experienced developers, we create custom software applications, websites, and mobile apps tailored to meet the unique needs of our clients.",
+  "display": "fullscreen",
+  "id": "/",
+  "icons": [
+    {
+      "src": "{% static 'images/192.png' %}",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "{% static 'images/512.png' %}",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "{% static 'images/192.png' %}",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "{% static 'images/512.png' %}",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "{% static 'images/512.png' %}",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "{% static 'images/512.png' %}",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
 
-	"shortcuts": [
-		{
-			"name": "Notifications",
-			"url": "/settings/",
-			"description": "Manage notificattions and settings",
-			"icons": [
-				{
-					"src": "{% static 'images/nots.png' %}",
-					"type": "image/png"
-				}
-			]
-		},
-		{
-			"name": "Login",
-			"url": "/accounts/login/",
-			"description": "Login into your account",
-			"icons": [
-				{
-					"src": "{% static 'images/login.png' %}",
-					"type": "image/png"
-				}
-			]
-		},
-		{
-			"name": "Create account",
-			"url": "/accounts/signup/",
-			"description": "Create Space account",
-			"icons": [
-				{
-					"src": "{% static 'images/account.png' %}",
-					"type": "image/png"
-				}
-			]
-		}
-	],
-	"edge_side_panel": {
-		"preferred_width": 480
-	},
-	"dir": "ltr",
-	"handle_links": "preferred",
-	"protocol_handlers": [
-		{
-			"protocol": "web+story",
-			"url": "/?article=%s"
-		}
-	],
-	"scope_extensions": [
-		{ "origin": "*.elate.ink" }
-	]
+  "edge_side_panel": {
+    "preferred_width": 280
+  },
+  "dir": "ltr",
+  "handle_links": "preferred",
+  "scope_extensions": [{ "origin": "*.redodevelopers.site" }]
 }
