@@ -37,3 +37,7 @@ def profile_detail(request, slug):
     profile = get_object_or_404(CompanyProfile, slug=slug)
     context = {"profile": profile}
     return render(request, "main/profile_detail.html", context)
+
+
+def company_services(request):
+    return render(request, "main/services.html")

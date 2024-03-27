@@ -5,7 +5,7 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   darkMode: "class",
 
-  content: ["./templates/**/*.html"],
+  content: ["./templates/**/*.html", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -36,6 +36,8 @@ module.exports = {
     },
   },
   plugins: [
+    require("flowbite/plugin"),
+
     plugin(function ({ addVariant, e, postcss }) {
       addVariant("firefox", ({ container, separator }) => {
         const isFirefoxRule = postcss.atRule({
