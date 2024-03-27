@@ -1,9 +1,9 @@
 {
 	"{% load static %}": "",
-	"name": "",
-	"short_name": "",
+	"name": "Redo Developers",
+	"short_name": "Redo Developers",
 	"start_url": "/",
-	"theme_color": "#ffff",
+	"theme_color": "#1a1a1a",
 	"scope": "/",
 	"prefer_related_applications": false,
 	"launch_handler": {
@@ -14,9 +14,9 @@
 	"background_color": "#ffff",
 	"display_override": ["fullscreen", "window-controls-overlay"],
 	"categories": [
-		
+		"software"
 	],
-	"description": "",
+	"description": "Redo Developers is a leading software development company, specializing in innovative solutions for businesses and individuals. With our team of experienced developers, we create custom software applications, websites, and mobile apps tailored to meet the unique needs of our clients. Our commitment to excellence and customer satisfaction sets us apart as a trusted partner in digital innovation.",
 	"display": "fullscreen",
 	"id": "/",
 	"icons": [
