@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 12:01+0300\n"
+"POT-Creation-Date: 2024-03-29 17:41+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1253,6 +1253,74 @@ msgstr ""
 "software solutions to propel businesses and individuals towards success in "
 "the dynamic digital landscape."
 
+#: .\templates\base\nav.html:52 .\templates\base\nav.html:166
+msgid "Home"
+msgstr "Home"
+
+#: .\templates\base\nav.html:55 .\templates\base\nav.html:173
+msgid "About us"
+msgstr "About us"
+
+#: .\templates\base\nav.html:58 .\templates\base\nav.html:180
+msgid "Services"
+msgstr "Services"
+
+#: .\templates\base\nav.html:64 .\templates\base\nav.html:190
+#: .\templates\main\index.html:57
+msgid "Contact us"
+msgstr "Contact us"
+
 #: .\templates\main\index.html:17
 msgid "Welcome to"
 msgstr "Welcome to"
+
+#: .\templates\main\index.html:50
+msgid "subtitle1"
+msgstr "Home to the most efficient and innovative software solutions built for success"
+
+#: .\templates\main\index.html:61 .\templates\main\index.html:122
+#, fuzzy
+#| msgid "Services"
+msgid "Our services"
+msgstr "Services"
+
+#: .\templates\main\index.html:73
+msgid "What we do ..."
+msgstr "What we do ..."
+
+#: .\templates\main\index.html:107
+msgid "text1"
+msgstr "We specialize in developing software solutions for individuals, startups, and enterprises. Whether you're looking for a simple web app, a mobile application, or enterprise-level software, we're your go-to partner for all your software needs. Our products are built to scale and efficiency, ensuring that your business stays ahead in today's competitive landscape."
+
+#: .\templates\main\index.html:135
+msgid "Empowering Businesses and Individuals"
+msgstr "Empowering Businesses and Individuals"
+
+#: .\templates\main\index.html:139
+msgid "text2"
+msgstr "Whether you're a business owner or an individual, Redo Developers Inc. is here to support you every step of the way. Exploring the challenges our customers face and how our integrated software solutions empowers you to overcome these obstacles and achieve your goals."
+
+#: .\templates\main\index.html:147
+msgid "text3"
+msgstr "Join the community of forward-thinking individuals and businesses who rely on our cutting-edge software to drive unparalleled success."
+
+#: .\templates\main\index.html:153
+msgid "text4"
+msgstr "Experience the transformative synergy of innovation and excellence with Redo Developers Inc. Our unwavering commitment to delivering top-notch solutions has led to a trail of success stories, setting us apart as leaders in the industry."
+
+#: .\templates\main\index.html:169
+msgid "Projects"
+msgstr "Projects"
+
+#: .\templates\main\index.html:173
+msgid "Years of Experience"
+msgstr "Years of Experience"
+
+#: .\templates\main\index.html:177
+msgid "Happy Clients"
+msgstr "Happy Clients"
+
+#, fuzzy
+#~| msgid "Contact us"
+#~ msgid "Contact Us"
+#~ msgstr "Contact us"
