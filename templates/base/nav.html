@@ -1,3 +1,7 @@
+{% load i18n %}
+{% load static %}
+
+
 <nav
   id="nav_bar_set"
   class="fixed top-0 firefox:bg-opacity-90 left-0 w-full bg-gray-900 z-20 px-4 py-4 flex border-b border-gray-800 justify-between bg-opacity-30 backdrop-filter backdrop-blur-lg items-center">
@@ -42,10 +46,29 @@
         d=" M 274.96 228.04 C 269.43 237.89 259.40 245.09 248.01 246.97 C 239.37 248.40 230.62 248.05 222.06 248.01 A 0.37 0.37 0.0 0 1 221.69 247.64 L 221.71 169.03 Q 221.71 168.45 222.30 168.46 Q 233.14 168.56 242.17 168.50 C 255.41 168.41 267.45 172.10 274.76 183.27 C 283.09 196.00 281.99 215.53 274.96 228.04 Z" />
     </svg>
   </a>
-  <div class="lg:hidden">
-    <button class="navbar-burger flex items-center text-primary-600 p-3">
+
+  <ul
+    class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-10">
+    <li><a class="text-white hover:text-gray-400" href="/">Home</a></li>
+    <li>
+      <a class="text-white hover:text-gray-400" href="{% url 'about' %}"
+        >About Us</a
+      >
+    </li>
+    <li><a class="text-white hover:text-gray-400" href="{% url 'products' %}">Services</a></li>
+  </ul>
+  <div class="flex gap-4 items-center">
+  <a
+    class="hidden lg:inline-block py-2 px-5 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded transition duration-200"
+    href="#"
+    >Contact us</a
+  >
+
+
+<div class="lg:hidden">
+    <button class="navbar-burger flex items-center text-primary-600">
       <svg
-        class="block h-4 w-4 fill-current"
+        class="block h-6 w-6 fill-current"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg">
         <title>Mobile menu</title>
@@ -53,49 +76,22 @@
       </svg>
     </button>
   </div>
-  <ul
-    class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
-    <li><a class="text-white hover:text-gray-400" href="/">Home</a></li>
-    <li class="text-gray-300">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        stroke="currentColor"
-        class="w-4 h-4 current-fill"
-        viewBox="0 0 24 24">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-      </svg>
-    </li>
-    <li>
-      <a class="text-white hover:text-gray-400" href="{% url 'about' %}"
-        >About Us</a
-      >
-    </li>
-    <li class="text-gray-300">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        stroke="currentColor"
-        class="w-4 h-4 current-fill"
-        viewBox="0 0 24 24">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-      </svg>
-    </li>
-    <li><a class="text-white hover:text-gray-400" href="{% url 'products' %}">Services</a></li>
-  </ul>
-  <a
-    class="hidden lg:inline-block py-2 px-5 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded transition duration-200"
-    href="#"
-    >Contact us</a
-  >
+  {% get_current_language as LANGUAGE_CODE %}
+  <form method="post" action="{% url 'set_language' %}" id="lang-form">
+    {% csrf_token %}
+            <input name="next" type="hidden" value="{{ redirect_to }}" />
+
+    <select id="lang-dropdown" name="language" class="bg-gray-800 text-xs focus:ring-0 border-0 text-white  border-gray-700  rounded block w-full ">
+      <option {% if LANGUAGE_CODE == 'en' %}selected{% endif %} value="en">
+        English </option>
+      <option {% if LANGUAGE_CODE == 'fr' %}selected{% endif %} value="fr">French</option>
+      <option {% if LANGUAGE_CODE == 'sw' %}selected{% endif %} value="sw">Swahili</option>
+    </select>
+  </form>
+
+
+
+</div>
 </nav>
 <div class="navbar-menu relative z-50 hidden">
   <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -202,26 +198,14 @@
 </div>
 
 <script>
-  let lastScrollTop = 0;
-  /*
-window.addEventListener('scroll', function() {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      const NavBar=document.getElementById('nav_bar_set')
+  const dropdown=document.getElementById('lang-dropdown');
+  const form =document.getElementById('lang-form');
 
-  if (currentScroll > lastScrollTop) {
-    // Scrolling down
-    NavBar.classList.remove('bg-opacity-30','bg-gray-100/10');
-    NavBar.classList.add('bg-white','bg-opacity-100');
-    
-  } else {
-    // Scrolling up
-    NavBar.classList.remove('bg-white','bg-opacity-100');
-    NavBar.classList.add('bg-opacity-30','bg-gray-100/10');
-  }
-  
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-});
-*/
+  dropdown.addEventListener('change',()=>{
+    form.submit();
+  })
+
+
 
   document.addEventListener("DOMContentLoaded", function () {
     // open

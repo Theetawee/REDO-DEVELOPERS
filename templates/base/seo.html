@@ -1,4 +1,7 @@
 {% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
 <link
   rel="icon"
   type="image/svg+xml"
@@ -19,7 +22,7 @@
 <meta property="og:url" content="{{request.build_absolute_uri}}" />
 <meta property="og:type" content="website" />
 <meta property="og:determiner" content="the" />
-<meta property="og:locale" content="en_GB" />
+<meta property="og:locale" content="{{LANGUAGE_CODE}}" />
 <meta property="og:site_name" content="Redo Developers Inc." />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -34,7 +37,7 @@
   content="{{title}}" />
 <meta
   property="twitter:description"
-  content="{{description}" />
+  content="{{description}}" />
 <meta
   property="twitter:image"
   content="{% static 'images/logo.png' %}" />
@@ -51,6 +54,5 @@
   {{title}}
 </title>
 
-<meta name="language" content="en" />
+<meta name="language" content="{{LANGUAGE_CODE}}" />
 <meta property="og:url" content="{{request.build_absolute_uri}}" />
-<meta property="og:locale" content="en_US" />

@@ -1,19 +1,26 @@
 {% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+
 <!DOCTYPE html>
-<html lang="en" style="color-scheme: dark;">
+<html lang="{{ LANGUAGE_CODE }}" style="color-scheme: dark;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="dns-prefetch" href="https://files.redodevelopers.site" />
     <link rel="preconnect" href="https://files.redodevelopers.site" />
+    {{ hreflang_tags | safe }}
+
     {% block head %}
     {% endblock %}
-    {% include 'base/head.html' %}
+{% include 'base/seo.html' %}{#% include 'base/pwa.html' %#}
+{% include 'base/fonts.html' %}
     <!-- <script src="{% static 'js/htmx.js' %}"></script> -->
     <script src="{% static 'js/main.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
 </head>
-<body class="bg-gray-900">
+<body class="bg-gray-900 text-white">
     {% include 'base/messages.html' %}
     {% include 'base/nav.html' %}
     <main class="min-h-screen">
