@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 18:08+0300\n"
+"POT-Creation-Date: 2024-03-29 18:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1271,6 +1271,18 @@ msgstr "Hudumu"
 msgid "Contact us"
 msgstr "Wasiliana nasi"
 
+#: .\templates\base\nav.html:86
+msgid "English"
+msgstr "Kiingereza"
+
+#: .\templates\base\nav.html:87
+msgid "French"
+msgstr "Kifaransa"
+
+#: .\templates\base\nav.html:88
+msgid "Swahili"
+msgstr "Kiswahili"
+
 #: .\templates\main\index.html:17
 msgid "Welcome to"
 msgstr "Karibu kwa"
@@ -1356,4 +1368,6 @@ msgstr "Ushuhuda: Uthibitisho Upo Katika Sifa"
 
 #: .\templates\partials\testimonies.html:59
 msgid "What our clients have to say,real stories from our happy customers"
-msgstr "Wateja wetu wanasema nini, hadithi za kweli kutoka kwa wateja wetu wenye furaha"
+msgstr ""
+"Wateja wetu wanasema nini, hadithi za kweli kutoka kwa wateja wetu wenye "
+"furaha"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 18:08+0300\n"
+"POT-Creation-Date: 2024-03-29 18:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1271,6 +1271,18 @@ msgstr "Prestations de service"
 msgid "Contact us"
 msgstr "Contactez-nous"
 
+#: .\templates\base\nav.html:86
+msgid "English"
+msgstr "Anglais"
+
+#: .\templates\base\nav.html:87
+msgid "French"
+msgstr "Français"
+
+#: .\templates\base\nav.html:88
+msgid "Swahili"
+msgstr "Swahili"
+
 #: .\templates\main\index.html:17
 msgid "Welcome to"
 msgstr "Bienvenue à"
@@ -1345,7 +1357,8 @@ msgstr "Témoignages : la preuve est dans l'éloge"
 
 #: .\templates\partials\testimonies.html:59
 msgid "What our clients have to say,real stories from our happy customers"
-msgstr "Ce que nos clients ont à dire, des histoires vraies de nos clients satisfaits"
+msgstr ""
+"Ce que nos clients ont à dire, des histoires vraies de nos clients satisfaits"
 
 #~ msgid "Contact Us"
 #~ msgstr "Contactez-nous"

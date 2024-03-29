@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 18:08+0300\n"
+"POT-Creation-Date: 2024-03-29 18:13+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1269,6 +1269,18 @@ msgstr "Services"
 #: .\templates\main\index.html:57
 msgid "Contact us"
 msgstr "Contact us"
+
+#: .\templates\base\nav.html:86
+msgid "English"
+msgstr "English"
+
+#: .\templates\base\nav.html:87
+msgid "French"
+msgstr "French"
+
+#: .\templates\base\nav.html:88
+msgid "Swahili"
+msgstr "Swahili"
 
 #: .\templates\main\index.html:17
 msgid "Welcome to"
