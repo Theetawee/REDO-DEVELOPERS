@@ -1,6 +1,6 @@
 from base.settings.base import *
 
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ["dev.redodevelopers.site", "localhost"]
 
 
