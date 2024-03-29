@@ -36,7 +36,7 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path("", include("main.urls")),
     path("accounts/", include("accounts.urls")),
-    prefix_default_language=True,
+    prefix_default_language=False,
 )
 
 if settings.DEBUG:
