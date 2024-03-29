@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 18:20+0300\n"
+"POT-Creation-Date: 2024-03-29 18:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1270,6 +1270,10 @@ msgstr "Contact us"
 #: .\templates\base\footer.html:22
 msgid "Privacy policy"
 msgstr ""
+
+#: .\templates\base\footer.html:48
+msgid "copyright"
+msgstr "Copyright© 2024 Redo Developers, Inc. All rights reserved."
 
 #: .\templates\base\nav.html:52 .\templates\base\nav.html:166
 msgid "Home"
