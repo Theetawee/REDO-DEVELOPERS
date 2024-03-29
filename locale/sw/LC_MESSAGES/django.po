@@ -1256,20 +1256,20 @@ msgstr ""
 
 #: .\templates\base\nav.html:52 .\templates\base\nav.html:166
 msgid "Home"
-msgstr ""
+msgstr "Nyumbani"
 
 #: .\templates\base\nav.html:55 .\templates\base\nav.html:173
 msgid "About us"
-msgstr ""
+msgstr "Kuhusu sisi"
 
 #: .\templates\base\nav.html:58 .\templates\base\nav.html:180
 msgid "Services"
-msgstr ""
+msgstr "Hudumu"
 
 #: .\templates\base\nav.html:64 .\templates\base\nav.html:190
 #: .\templates\main\index.html:57
 msgid "Contact us"
-msgstr ""
+msgstr "Wasiliana nasi"
 
 #: .\templates\main\index.html:17
 msgid "Welcome to"
@@ -1277,44 +1277,44 @@ msgstr "Karibu kwa"
 
 #: .\templates\main\index.html:50
 msgid "subtitle1"
-msgstr ""
+msgstr "Nyumbani kwa suluhisho bora zaidi na bunifu za programu zilizoundwa kwa mafanikio Nyumbani kwa suluhisho bora zaidi na bunifu za programu iliyoundwa kwa mafanikio."
 
 #: .\templates\main\index.html:61 .\templates\main\index.html:122
 msgid "Our services"
-msgstr ""
+msgstr "Huduma zetu"
 
 #: .\templates\main\index.html:73
 msgid "What we do ..."
-msgstr ""
+msgstr "Tunachofanya ..."
 
 #: .\templates\main\index.html:107
 msgid "text1"
-msgstr ""
+msgstr "Tuna utaalam katika kutengeneza suluhisho za programu kwa watu binafsi, wanaoanzisha na biashara. Iwe unatafuta programu rahisi ya wavuti, programu ya simu, au programu ya kiwango cha biashara, sisi ni mshirika wako wa kwenda kwa mahitaji yako yote ya programu. Bidhaa zetu zimeundwa kwa kiwango na ufanisi, kuhakikisha kuwa biashara yako inasalia mbele katika mazingira ya kisasa ya ushindani. Tuna utaalam katika kutengeneza suluhisho za programu kwa watu binafsi, wanaoanzisha na biashara. Iwe unatafuta programu rahisi ya wavuti, programu ya simu, au programu ya kiwango cha biashara, sisi ni mshirika wako wa kwenda kwa mahitaji yako yote ya programu. Bidhaa zetu zimeundwa kwa kiwango na ufanisi, kuhakikisha kuwa biashara yako inasalia mbele katika mazingira ya kisasa ya ushindani."
 
 #: .\templates\main\index.html:135
 msgid "Empowering Businesses and Individuals"
-msgstr ""
+msgstr "Kuwezesha Biashara na Watu Binafsi"
 
 #: .\templates\main\index.html:139
 msgid "text2"
-msgstr ""
+msgstr "Iwe wewe ni mmiliki wa biashara au mtu binafsi, Redo Developers Inc. iko hapa kukusaidia kila hatua. Kuchunguza changamoto zinazowakabili wateja wetu na jinsi suluhu zetu za programu zilizojumuishwa hukuwezesha kushinda vizuizi hivi na kufikia malengo yako. Iwe wewe ni mmiliki wa biashara au mtu binafsi, Redo Developers Inc. iko hapa kukusaidia kila hatua. Kuchunguza changamoto zinazowakabili wateja wetu na jinsi suluhu zetu za programu zilizojumuishwa hukuwezesha kushinda vizuizi hivi na kufikia malengo yako."
 
 #: .\templates\main\index.html:147
 msgid "text3"
-msgstr ""
+msgstr "Jiunge na jumuiya ya watu binafsi na wafanyabiashara wenye mawazo ya mbeleni ambao wanategemea programu yetu ya kisasa kuleta mafanikio yasiyo na kifani. Jiunge na jumuiya ya watu binafsi na wafanyabiashara wenye mawazo ya mbeleni ambao wanategemea programu yetu ya kisasa kuleta mafanikio yasiyo na kifani."
 
 #: .\templates\main\index.html:153
 msgid "text4"
-msgstr ""
+msgstr "Pata uzoefu wa mabadiliko ya uvumbuzi na ubora bora na Redo Developers Inc. Ahadi yetu thabiti ya kutoa masuluhisho ya hali ya juu imesababisha msururu wa hadithi za mafanikio, na kutuweka kando kama viongozi katika tasnia. Pata uzoefu wa mabadiliko ya uvumbuzi na ubora bora na Redo Developers Inc. Ahadi yetu thabiti ya kutoa masuluhisho ya hali ya juu imesababisha msururu wa hadithi za mafanikio, na kutuweka kando kama viongozi katika tasnia."
 
 #: .\templates\main\index.html:169
 msgid "Projects"
-msgstr ""
+msgstr "Miradi"
 
 #: .\templates\main\index.html:173
 msgid "Years of Experience"
-msgstr ""
+msgstr "Miaka ya Uzoefu"
 
 #: .\templates\main\index.html:177
 msgid "Happy Clients"
-msgstr ""
+msgstr "Wateja Wenye Furaha"
