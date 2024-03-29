@@ -103,7 +103,6 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR, "locale"),
 ]
 
-prefix_default_language = False
 
 TIME_ZONE = "Africa/Nairobi"
 
