@@ -1270,7 +1270,7 @@ msgstr "Wasiliana nasi"
 
 #: .\templates\base\footer.html:22
 msgid "Privacy policy"
-msgstr "sera ya faragha"
+msgstr "Sera ya faragha"
 
 #: .\templates\base\footer.html:48
 msgid "copyright"

@@ -1,6 +1,4 @@
-{% load i18n %}
-{% load static %}
-
+{% load i18n %} {% load static %}
 
 <nav
   id="nav_bar_set"
@@ -49,54 +47,68 @@
 
   <ul
     class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-10">
-    <li><a class="text-white hover:text-gray-400" href="/">{% trans "Home" %}</a></li>
+    <li>
+      <a class="text-white hover:text-gray-400" href="/">{% trans "Home" %}</a>
+    </li>
     <li>
       <a class="text-white hover:text-gray-400" href="{% url 'about' %}"
         >{% trans "About us" %}</a
       >
     </li>
-    <li><a class="text-white hover:text-gray-400" href="{% url 'products' %}">{% trans "Services" %}</a></li>
+    <li>
+      <a class="text-white hover:text-gray-400" href="{% url 'products' %}"
+        >{% trans "Services" %}</a
+      >
+    </li>
   </ul>
   <div class="flex gap-4 items-center">
-  <a
-    class="hidden lg:inline-block py-2 px-5 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded transition duration-200"
-    href="#"
-    >{% trans "Contact us" %}</a
-  >
+    <a
+      class="hidden lg:inline-block py-2 px-5 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded transition duration-200"
+      href="#"
+      >{% trans "Contact us" %}</a
+    >
 
+    <div class="lg:hidden">
+      <button class="navbar-burger flex items-center text-primary-600">
+        <svg
+          class="block h-6 w-6 fill-current"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <title>Mobile menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
+    {% get_current_language as LANGUAGE_CODE %}
+    <form method="post" action="{% url 'set_language' %}" id="lang-form">
+      {% csrf_token %}
+      <input name="next" type="hidden" value="{{ redirect_to }}" />
 
-<div class="lg:hidden">
-    <button class="navbar-burger flex items-center text-primary-600">
-      <svg
-        class="block h-6 w-6 fill-current"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg">
-        <title>Mobile menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-      </svg>
-    </button>
+      <select
+        id="lang-dropdown"
+        name="language"
+        class="bg-gray-800 text-xs focus:ring-0 border-0 text-white border-gray-700 rounded block w-full">
+        {% if LANGUAGE_CODE == 'en' %}
+        <option selected value="en">{% trans "English" %}</option>
+        {% else %}
+        <option value="en">{% trans "English" %}</option>
+        {% endif %} {% if LANGUAGE_CODE == 'fr' %}
+        <option selected value="fr">{% trans "French" %}</option>
+        {% else %}
+        <option value="fr">{% trans "French" %}</option>
+        {% endif %} {% if LANGUAGE_CODE == 'sw' %}
+        <option selected value="sw">{% trans "Swahili" %}</option>
+        {% else %}
+        <option value="sw">{% trans "Swahili" %}</option>
+        {% endif %}
+      </select>
+    </form>
   </div>
-  {% get_current_language as LANGUAGE_CODE %}
-  <form method="post" action="{% url 'set_language' %}" id="lang-form">
-    {% csrf_token %}
-            <input name="next" type="hidden" value="{{ redirect_to }}" />
-
-    <select id="lang-dropdown" name="language" class="bg-gray-800 text-xs focus:ring-0 border-0 text-white  border-gray-700  rounded block w-full ">
-      <option {% if LANGUAGE_CODE == 'en' %}selected{% endif %} value="en">
-        {% trans "English" %} </option>
-      <option {% if LANGUAGE_CODE == 'fr' %}selected{% endif %} value="fr">{% trans "French" %}</option>
-      <option {% if LANGUAGE_CODE == 'sw' %}selected{% endif %} value="sw">{% trans "Swahili" %}</option>
-    </select>
-  </form>
-
-
-
-</div>
 </nav>
 <div class="navbar-menu relative z-50 hidden">
   <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
   <nav
-    class="fixed bg-opacity-30 firefox:bg-opacity-90 backdrop-filter backdrop-blur-lg top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r border-gray-800 overflow-y-auto">
+    class="sticky bg-opacity-30 firefox:bg-opacity-90 backdrop-filter backdrop-blur-lg top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r border-gray-800 overflow-y-auto">
     <div class="flex items-center mb-8">
       <a
         aria-label="Waanverse"
@@ -190,20 +202,17 @@
           >{% trans "Contact us" %}</a
         >
       </div>
-      
     </div>
   </nav>
 </div>
 
 <script>
-  const dropdown=document.getElementById('lang-dropdown');
-  const form =document.getElementById('lang-form');
+  const dropdown = document.getElementById("lang-dropdown");
+  const form = document.getElementById("lang-form");
 
-  dropdown.addEventListener('change',()=>{
+  dropdown.addEventListener("change", () => {
     form.submit();
-  })
-
-
+  });
 
   document.addEventListener("DOMContentLoaded", function () {
     // open
