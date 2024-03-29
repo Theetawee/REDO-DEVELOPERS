@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 17:41+0300\n"
+"POT-Creation-Date: 2024-03-29 18:08+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1277,7 +1277,10 @@ msgstr "Karibu kwa"
 
 #: .\templates\main\index.html:50
 msgid "subtitle1"
-msgstr "Nyumbani kwa suluhisho bora zaidi na bunifu za programu zilizoundwa kwa mafanikio Nyumbani kwa suluhisho bora zaidi na bunifu za programu iliyoundwa kwa mafanikio."
+msgstr ""
+"Nyumbani kwa suluhisho bora zaidi na bunifu za programu zilizoundwa kwa "
+"mafanikio Nyumbani kwa suluhisho bora zaidi na bunifu za programu iliyoundwa "
+"kwa mafanikio."
 
 #: .\templates\main\index.html:61 .\templates\main\index.html:122
 msgid "Our services"
@@ -1289,7 +1292,18 @@ msgstr "Tunachofanya ..."
 
 #: .\templates\main\index.html:107
 msgid "text1"
-msgstr "Tuna utaalam katika kutengeneza suluhisho za programu kwa watu binafsi, wanaoanzisha na biashara. Iwe unatafuta programu rahisi ya wavuti, programu ya simu, au programu ya kiwango cha biashara, sisi ni mshirika wako wa kwenda kwa mahitaji yako yote ya programu. Bidhaa zetu zimeundwa kwa kiwango na ufanisi, kuhakikisha kuwa biashara yako inasalia mbele katika mazingira ya kisasa ya ushindani. Tuna utaalam katika kutengeneza suluhisho za programu kwa watu binafsi, wanaoanzisha na biashara. Iwe unatafuta programu rahisi ya wavuti, programu ya simu, au programu ya kiwango cha biashara, sisi ni mshirika wako wa kwenda kwa mahitaji yako yote ya programu. Bidhaa zetu zimeundwa kwa kiwango na ufanisi, kuhakikisha kuwa biashara yako inasalia mbele katika mazingira ya kisasa ya ushindani."
+msgstr ""
+"Tuna utaalam katika kutengeneza suluhisho za programu kwa watu binafsi, "
+"wanaoanzisha na biashara. Iwe unatafuta programu rahisi ya wavuti, programu "
+"ya simu, au programu ya kiwango cha biashara, sisi ni mshirika wako wa "
+"kwenda kwa mahitaji yako yote ya programu. Bidhaa zetu zimeundwa kwa kiwango "
+"na ufanisi, kuhakikisha kuwa biashara yako inasalia mbele katika mazingira "
+"ya kisasa ya ushindani. Tuna utaalam katika kutengeneza suluhisho za "
+"programu kwa watu binafsi, wanaoanzisha na biashara. Iwe unatafuta programu "
+"rahisi ya wavuti, programu ya simu, au programu ya kiwango cha biashara, "
+"sisi ni mshirika wako wa kwenda kwa mahitaji yako yote ya programu. Bidhaa "
+"zetu zimeundwa kwa kiwango na ufanisi, kuhakikisha kuwa biashara yako "
+"inasalia mbele katika mazingira ya kisasa ya ushindani."
 
 #: .\templates\main\index.html:135
 msgid "Empowering Businesses and Individuals"
@@ -1297,15 +1311,32 @@ msgstr "Kuwezesha Biashara na Watu Binafsi"
 
 #: .\templates\main\index.html:139
 msgid "text2"
-msgstr "Iwe wewe ni mmiliki wa biashara au mtu binafsi, Redo Developers Inc. iko hapa kukusaidia kila hatua. Kuchunguza changamoto zinazowakabili wateja wetu na jinsi suluhu zetu za programu zilizojumuishwa hukuwezesha kushinda vizuizi hivi na kufikia malengo yako. Iwe wewe ni mmiliki wa biashara au mtu binafsi, Redo Developers Inc. iko hapa kukusaidia kila hatua. Kuchunguza changamoto zinazowakabili wateja wetu na jinsi suluhu zetu za programu zilizojumuishwa hukuwezesha kushinda vizuizi hivi na kufikia malengo yako."
+msgstr ""
+"Iwe wewe ni mmiliki wa biashara au mtu binafsi, Redo Developers Inc. iko "
+"hapa kukusaidia kila hatua. Kuchunguza changamoto zinazowakabili wateja wetu "
+"na jinsi suluhu zetu za programu zilizojumuishwa hukuwezesha kushinda "
+"vizuizi hivi na kufikia malengo yako. Iwe wewe ni mmiliki wa biashara au mtu "
+"binafsi, Redo Developers Inc. iko hapa kukusaidia kila hatua. Kuchunguza "
+"changamoto zinazowakabili wateja wetu na jinsi suluhu zetu za programu "
+"zilizojumuishwa hukuwezesha kushinda vizuizi hivi na kufikia malengo yako."
 
 #: .\templates\main\index.html:147
 msgid "text3"
-msgstr "Jiunge na jumuiya ya watu binafsi na wafanyabiashara wenye mawazo ya mbeleni ambao wanategemea programu yetu ya kisasa kuleta mafanikio yasiyo na kifani. Jiunge na jumuiya ya watu binafsi na wafanyabiashara wenye mawazo ya mbeleni ambao wanategemea programu yetu ya kisasa kuleta mafanikio yasiyo na kifani."
+msgstr ""
+"Jiunge na jumuiya ya watu binafsi na wafanyabiashara wenye mawazo ya mbeleni "
+"ambao wanategemea programu yetu ya kisasa kuleta mafanikio yasiyo na kifani. "
+"Jiunge na jumuiya ya watu binafsi na wafanyabiashara wenye mawazo ya mbeleni "
+"ambao wanategemea programu yetu ya kisasa kuleta mafanikio yasiyo na kifani."
 
 #: .\templates\main\index.html:153
 msgid "text4"
-msgstr "Pata uzoefu wa mabadiliko ya uvumbuzi na ubora bora na Redo Developers Inc. Ahadi yetu thabiti ya kutoa masuluhisho ya hali ya juu imesababisha msururu wa hadithi za mafanikio, na kutuweka kando kama viongozi katika tasnia. Pata uzoefu wa mabadiliko ya uvumbuzi na ubora bora na Redo Developers Inc. Ahadi yetu thabiti ya kutoa masuluhisho ya hali ya juu imesababisha msururu wa hadithi za mafanikio, na kutuweka kando kama viongozi katika tasnia."
+msgstr ""
+"Pata uzoefu wa mabadiliko ya uvumbuzi na ubora bora na Redo Developers Inc. "
+"Ahadi yetu thabiti ya kutoa masuluhisho ya hali ya juu imesababisha msururu "
+"wa hadithi za mafanikio, na kutuweka kando kama viongozi katika tasnia. Pata "
+"uzoefu wa mabadiliko ya uvumbuzi na ubora bora na Redo Developers Inc. Ahadi "
+"yetu thabiti ya kutoa masuluhisho ya hali ya juu imesababisha msururu wa "
+"hadithi za mafanikio, na kutuweka kando kama viongozi katika tasnia."
 
 #: .\templates\main\index.html:169
 msgid "Projects"
@@ -1318,3 +1349,11 @@ msgstr "Miaka ya Uzoefu"
 #: .\templates\main\index.html:177
 msgid "Happy Clients"
 msgstr "Wateja Wenye Furaha"
+
+#: .\templates\partials\testimonies.html:55
+msgid "Testimonials: The Proof Is in the Praise"
+msgstr "Ushuhuda: Uthibitisho Upo Katika Sifa"
+
+#: .\templates\partials\testimonies.html:59
+msgid "What our clients have to say,real stories from our happy customers"
+msgstr "Wateja wetu wanasema nini, hadithi za kweli kutoka kwa wateja wetu wenye furaha"

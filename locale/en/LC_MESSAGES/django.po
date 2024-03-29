@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 17:41+0300\n"
+"POT-Creation-Date: 2024-03-29 18:08+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1276,7 +1276,9 @@ msgstr "Welcome to"
 
 #: .\templates\main\index.html:50
 msgid "subtitle1"
-msgstr "Home to the most efficient and innovative software solutions built for success"
+msgstr ""
+"Home to the most efficient and innovative software solutions built for "
+"success"
 
 #: .\templates\main\index.html:61 .\templates\main\index.html:122
 #, fuzzy
@@ -1290,7 +1292,12 @@ msgstr "What we do ..."
 
 #: .\templates\main\index.html:107
 msgid "text1"
-msgstr "We specialize in developing software solutions for individuals, startups, and enterprises. Whether you're looking for a simple web app, a mobile application, or enterprise-level software, we're your go-to partner for all your software needs. Our products are built to scale and efficiency, ensuring that your business stays ahead in today's competitive landscape."
+msgstr ""
+"We specialize in developing software solutions for individuals, startups, "
+"and enterprises. Whether you're looking for a simple web app, a mobile "
+"application, or enterprise-level software, we're your go-to partner for all "
+"your software needs. Our products are built to scale and efficiency, "
+"ensuring that your business stays ahead in today's competitive landscape."
 
 #: .\templates\main\index.html:135
 msgid "Empowering Businesses and Individuals"
@@ -1298,15 +1305,25 @@ msgstr "Empowering Businesses and Individuals"
 
 #: .\templates\main\index.html:139
 msgid "text2"
-msgstr "Whether you're a business owner or an individual, Redo Developers Inc. is here to support you every step of the way. Exploring the challenges our customers face and how our integrated software solutions empowers you to overcome these obstacles and achieve your goals."
+msgstr ""
+"Whether you're a business owner or an individual, Redo Developers Inc. is "
+"here to support you every step of the way. Exploring the challenges our "
+"customers face and how our integrated software solutions empowers you to "
+"overcome these obstacles and achieve your goals."
 
 #: .\templates\main\index.html:147
 msgid "text3"
-msgstr "Join the community of forward-thinking individuals and businesses who rely on our cutting-edge software to drive unparalleled success."
+msgstr ""
+"Join the community of forward-thinking individuals and businesses who rely "
+"on our cutting-edge software to drive unparalleled success."
 
 #: .\templates\main\index.html:153
 msgid "text4"
-msgstr "Experience the transformative synergy of innovation and excellence with Redo Developers Inc. Our unwavering commitment to delivering top-notch solutions has led to a trail of success stories, setting us apart as leaders in the industry."
+msgstr ""
+"Experience the transformative synergy of innovation and excellence with Redo "
+"Developers Inc. Our unwavering commitment to delivering top-notch solutions "
+"has led to a trail of success stories, setting us apart as leaders in the "
+"industry."
 
 #: .\templates\main\index.html:169
 msgid "Projects"
@@ -1319,6 +1336,14 @@ msgstr "Years of Experience"
 #: .\templates\main\index.html:177
 msgid "Happy Clients"
 msgstr "Happy Clients"
+
+#: .\templates\partials\testimonies.html:55
+msgid "Testimonials: The Proof Is in the Praise"
+msgstr "Testimonials: The Proof Is in the Praise"
+
+#: .\templates\partials\testimonies.html:59
+msgid "What our clients have to say,real stories from our happy customers"
+msgstr "What our clients have to say,real stories from our happy customers"
 
 #, fuzzy
 #~| msgid "Contact us"
