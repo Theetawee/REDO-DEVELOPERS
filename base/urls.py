@@ -22,8 +22,8 @@ urlpatterns = [
         ),
     ),
     path("admin/", admin.site.urls),
-    path("", include("main.urls")),
-    path("accounts/", include("accounts.urls")),
+    # path("", include("main.urls")),
+    # path("accounts/", include("accounts.urls")),
     path(
         "sitemap.xml",
         sitemap,
@@ -33,10 +33,10 @@ urlpatterns = [
     path("i18n/", include("django.conf.urls.i18n")),
 ]
 
-# urlpatterns += i18n_patterns(
-#     path("", include("main.urls")),
-#     path("accounts/", include("accounts.urls")),
-# )
+urlpatterns += i18n_patterns(
+    path("", include("main.urls")),
+    path("accounts/", include("accounts.urls")),
+)
 
 if settings.DEBUG:
     import debug_toolbar
