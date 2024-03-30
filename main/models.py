@@ -43,7 +43,7 @@ class Testimony(models.Model):
     lang = models.CharField(max_length=255, choices=LANGUAGES, default="en")
 
     def __str__(self):
-        return self.name
+        return f'{self.name}- {self.lang}'
 
 
 @receiver(post_save, sender=CompanyProfile)
