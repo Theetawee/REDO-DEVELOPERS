@@ -13,13 +13,14 @@
 
     {% block head %}
     {% endblock %}
-{% include 'base/seo.html' %}{#% include 'base/pwa.html' %#}
+{% include 'base/seo.html' %}
+{#% include 'base/pwa.html' %#}
 {% include 'base/fonts.html' %}
     <!-- <script src="{% static 'js/htmx.js' %}"></script> -->
     <script src="{% static 'js/main.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
 </head>
-<body class="bg-gray-900 overflow-x-hidden text-white">
+<body class="bg-gray-900 text-white">
     {% include 'base/messages.html' %}
     {% include 'base/nav.html' %}
     <main class="min-h-screen">
