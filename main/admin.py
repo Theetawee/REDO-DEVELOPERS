@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Testimony, CompanyProfile, CompanyRole
+from .models import Testimony, CompanyProfile, CompanyRole, TestimonyMsg
 
 # Register your models here.
 
@@ -7,3 +7,4 @@ from .models import Testimony, CompanyProfile, CompanyRole
 admin.site.register(Testimony)
 admin.site.register(CompanyProfile)
 admin.site.register(CompanyRole)
+admin.site.register(TestimonyMsg)
