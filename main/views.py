@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Testimony
+from .models import TestimonyMsg
 from .models import CompanyProfile
 from django.utils.translation import gettext as _, get_language
 
@@ -7,7 +7,7 @@ from django.utils.translation import gettext as _, get_language
 # Create your views here.
 def index(request):
     lang = get_language()
-    testimonies = Testimony.objects.filter(lang=lang)
+    testimonies = TestimonyMsg.objects.filter(lang=lang)
     title = _("Redo Developers Inc. | Pioneering Technology Solutions for Success")
     description = _(
         "Discover a transformative partnership with Redo Developers Inc. We&#x27;re your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape."
