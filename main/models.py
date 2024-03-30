@@ -34,11 +34,13 @@ class CompanyProfile(models.Model):
 
 
 class Testimony(models.Model):
+    LANGUAGES = settings.LANGUAGES
     name = models.CharField(max_length=255)
     description = models.TextField()
     image = models.ImageField(upload_to="testimonies/", blank=True, null=True)
     rating = models.IntegerField(default=0)
     title = models.CharField(max_length=255)
+    lang = models.CharField(max_length=255, choices=LANGUAGES, default="en")
 
     def __str__(self):
         return self.name
