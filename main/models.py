@@ -49,6 +49,9 @@ class TestimonyMsg(models.Model):
     msg = models.TextField()
     lang = models.CharField(max_length=255, choices=settings.LANGUAGES, default="en")
 
+    def __str__(self):
+        return f"{self.testmony.name}- {self.lang}"
+
 
 @receiver(post_save, sender=CompanyProfile)
 def create_slug(sender, instance, created, *args, **kwargs):
