@@ -47,3 +47,7 @@ def profile_detail(request, slug):
 
 def company_services(request):
     return render(request, "main/services.html")
+
+
+def contact_us(request):
+    return render(request, "main/contact.html")

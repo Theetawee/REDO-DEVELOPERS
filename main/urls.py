@@ -5,6 +5,7 @@ from .views import (
     company_profiles,
     profile_detail,
     company_services,
+    contact_us,
 )
 
 
@@ -13,5 +14,6 @@ urlpatterns = [
     path("company/about/", about_company, name="about"),
     path("company/profiles/", company_profiles, name="profiles"),
     path("company/profiles/<slug:slug>/", profile_detail, name="detail"),
-    path("services/", company_services, name="products"),
+    path("services/", company_services, name="services"),
+    path("contact/", contact_us, name="contact"),
 ]

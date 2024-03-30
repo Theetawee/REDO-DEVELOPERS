@@ -52,11 +52,11 @@
         <div class="flex items-center justify-center">
           <a
             class="border hover:bg-white/10 rounded border-white text-white px-6 py-2.5 text-lg font-medium"
-            href="/contact"
+            href="{% url 'contact' %}"
             >{% trans "Contact us" %}</a
           ><a
             class="py-2.5 rounded hidden sm:block px-6 bg-primary-500 text-white ml-6 text-lg font-medium hover:bg-primary-500/80"
-            href="/products"
+            href="{% url 'services' %}"
             >{% trans "Our services" %}</a
           >
         </div>
@@ -110,7 +110,7 @@
         <button class="outline-none">
           <a
             class="bg-gray-900 border-gray-800 border hover:bg-gray-800/80 font-medium text-lg px-6 py-3 rounded text-white"
-            href="/products"
+            href="{% url 'services' %}"
             >
             {% trans "Our services" %}
             </a

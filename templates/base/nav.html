@@ -56,7 +56,7 @@
       >
     </li>
     <li>
-      <a class="text-white hover:text-gray-400" href="{% url 'products' %}"
+      <a class="text-white hover:text-gray-400" href="{% url 'services' %}"
         >{% trans "Services" %}</a
       >
     </li>
@@ -64,7 +64,7 @@
   <div class="flex gap-4 items-center">
     <a
       class="hidden lg:inline-block py-2 px-5 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded transition duration-200"
-      href="#"
+      href="{% url 'contact' %}"
       >{% trans "Contact us" %}</a
     >
 
@@ -188,7 +188,7 @@
         <li class="mb-1">
           <a
             class="block p-4 text-sm font-semibold text-gray-400 hover:bg-primary-50 hover:text-primary-600 rounded"
-            href="#"
+            href="{% url 'services' %}"
             >{% trans "Services" %}</a
           >
         </li>
@@ -198,7 +198,7 @@
       <div class="pt-6">
         <a
           class="block px-4 py-3 mb-3 text-center font-semibold leading-none bg-white hover:bg-gray-100 text-gray-900 rounded"
-          href="#"
+          href="{% url 'contact' %}"
           >{% trans "Contact us" %}</a
         >
       </div>
