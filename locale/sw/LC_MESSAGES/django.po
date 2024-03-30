@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 18:24+0300\n"
+"POT-Creation-Date: 2024-03-30 08:43+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1237,12 +1237,12 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
-#: .\main\views.py:10
+#: .\main\views.py:11
 msgid "Redo Developers Inc. | Pioneering Technology Solutions for Success"
 msgstr ""
 "Redo Developers Inc. | Suluhu za Teknolojia ya Uanzilishi kwa Mafanikio"
 
-#: .\main\views.py:12
+#: .\main\views.py:13
 msgid ""
 "Discover a transformative partnership with Redo Developers Inc. We&#x27;re "
 "your trailblazing ally, delivering cutting-edge technology and innovative "
@@ -1255,7 +1255,7 @@ msgstr ""
 "mazingira ya dijitali yanayobadilika."
 
 #: .\templates\base\footer.html:7 .\templates\base\nav.html:55
-#: .\templates\base\nav.html:173
+#: .\templates\base\nav.html:185
 msgid "About us"
 msgstr "Kuhusu sisi"
 
@@ -1263,8 +1263,8 @@ msgstr "Kuhusu sisi"
 msgid "Profiles"
 msgstr "Wasifu"
 
-#: .\templates\base\footer.html:17 .\templates\base\nav.html:64
-#: .\templates\base\nav.html:190 .\templates\main\index.html:57
+#: .\templates\base\footer.html:17 .\templates\base\nav.html:68
+#: .\templates\base\nav.html:202 .\templates\main\index.html:56
 msgid "Contact us"
 msgstr "Wasiliana nasi"
 
@@ -1276,25 +1276,137 @@ msgstr "Sera ya faragha"
 msgid "copyright"
 msgstr "Copyright© 2024 Rudia Developers, Inc. Haki zote zimehifadhiwa."
 
-#: .\templates\base\nav.html:52 .\templates\base\nav.html:166
+#: .\templates\base\nav.html:51 .\templates\base\nav.html:178
 msgid "Home"
 msgstr "Nyumbani"
 
-#: .\templates\base\nav.html:58 .\templates\base\nav.html:180
+#: .\templates\base\nav.html:60 .\templates\base\nav.html:192
 msgid "Services"
 msgstr "Hudumu"
 
-#: .\templates\base\nav.html:86
+#: .\templates\base\nav.html:92 .\templates\base\nav.html:94
 msgid "English"
 msgstr "Kiingereza"
 
-#: .\templates\base\nav.html:87
+#: .\templates\base\nav.html:96 .\templates\base\nav.html:98
 msgid "French"
 msgstr "Kifaransa"
 
-#: .\templates\base\nav.html:88
+#: .\templates\base\nav.html:100 .\templates\base\nav.html:102
 msgid "Swahili"
 msgstr "Kiswahili"
+
+#: .\templates\main\about.html:25
+msgid "Our Vision"
+msgstr "Maono Yetu"
+
+#: .\templates\main\about.html:27
+msgid "vision"
+msgstr ""
+"Tangu kuanzishwa kwetu mnamo 2021, tulianza tukiwa na maono ya kawaida na "
+"msukumo mwingi. Dhamira yetu ni kuunda upya mandhari ya kidijitali kwa kutoa "
+"masuluhisho bunifu ya programu, kwa msisitizo mkubwa wa teknolojia za AI "
+"(Akili Bandia)."
+
+#: .\templates\main\about.html:49
+msgid "Our Journey"
+msgstr "Safari Yetu"
+
+#: .\templates\main\about.html:51
+msgid "journey"
+msgstr ""
+"Tuliposonga mbele, tulikumbana na changamoto katika tasnia mbalimbali. Timu "
+"yetu iliyojitolea ilikumbatia changamoto hizi kama fursa za kubadilisha "
+"biashara, kutumia uwezo wa AI kuunda masuluhisho ya kiubunifu."
+
+#: .\templates\main\about.html:69
+msgid "Our Purpose"
+msgstr "Madhumuni Yetu"
+
+#: .\templates\main\about.html:71
+msgid "purpose"
+msgstr ""
+"Safari yetu ilituongoza kutengeneza masuluhisho ya msingi ambayo "
+"yanashughulikia matatizo ya ulimwengu halisi. Tulibuni zana shirikishi, "
+"utiririshaji kazi uliorahisishwa, na hali ya matumizi iliyoimarishwa ili "
+"kusukuma mipaka ya uvumbuzi, inayoendeshwa na nguvu za teknolojia za AI"
+
+#: .\templates\main\about.html:89
+msgid "Our Impact"
+msgstr "Athari Yetu"
+
+#: .\templates\main\about.html:91
+msgid "impact"
+msgstr ""
+"Mnamo 2023, Redo Developers Inc. itasimama kama ushahidi wa uwezo wetu wa "
+"kubadilisha changamoto kuwa hatua za maendeleo. Suluhu zetu zinavuma katika "
+"sekta zote, na athari zetu huonekana kupitia ufanisi, usalama, na uvumbuzi "
+"tunaoingiza katika kila mradi, ukichochewa na uwezekano wa AI."
+
+#: .\templates\main\about.html:103
+msgid "Embark on a Journey with Redo Developers Inc."
+msgstr ""
+
+#: .\templates\main\about.html:106
+msgid "about_welcome"
+msgstr ""
+
+#: .\templates\main\about.html:112
+#, fuzzy
+#| msgid "vision"
+msgid "about_company_vision"
+msgstr ""
+"Tangu kuanzishwa kwetu mnamo 2021, tulianza tukiwa na maono ya kawaida na "
+"msukumo mwingi. Dhamira yetu ni kuunda upya mandhari ya kidijitali kwa kutoa "
+"masuluhisho bunifu ya programu, kwa msisitizo mkubwa wa teknolojia za AI "
+"(Akili Bandia)."
+
+#: .\templates\main\about.html:121
+msgid "about_history"
+msgstr ""
+
+#: .\templates\main\about.html:125
+msgid "about_mission"
+msgstr ""
+
+#: .\templates\main\about.html:141
+msgid "Our Impact and Journey Through Time"
+msgstr ""
+
+#: .\templates\main\about.html:144
+#, fuzzy
+#| msgid "impact"
+msgid "about_impact"
+msgstr ""
+"Mnamo 2023, Redo Developers Inc. itasimama kama ushahidi wa uwezo wetu wa "
+"kubadilisha changamoto kuwa hatua za maendeleo. Suluhu zetu zinavuma katika "
+"sekta zote, na athari zetu huonekana kupitia ufanisi, usalama, na uvumbuzi "
+"tunaoingiza katika kila mradi, ukichochewa na uwezekano wa AI."
+
+#: .\templates\main\about.html:151
+#, fuzzy
+#| msgid "journey"
+msgid "about_journey"
+msgstr ""
+"Tuliposonga mbele, tulikumbana na changamoto katika tasnia mbalimbali. Timu "
+"yetu iliyojitolea ilikumbatia changamoto hizi kama fursa za kubadilisha "
+"biashara, kutumia uwezo wa AI kuunda masuluhisho ya kiubunifu."
+
+#: .\templates\main\about.html:160
+msgid "about_history2"
+msgstr ""
+
+#: .\templates\main\about.html:168
+msgid "Vision, Commitment to Quality, and Social Responsibility"
+msgstr ""
+
+#: .\templates\main\about.html:171
+msgid "about_future"
+msgstr ""
+
+#: .\templates\main\about.html:178
+msgid "about_social"
+msgstr ""
 
 #: .\templates\main\index.html:17
 msgid "Welcome to"
@@ -1307,15 +1419,15 @@ msgstr ""
 "mafanikio Nyumbani kwa suluhisho bora zaidi na bunifu za programu iliyoundwa "
 "kwa mafanikio."
 
-#: .\templates\main\index.html:61 .\templates\main\index.html:122
+#: .\templates\main\index.html:60 .\templates\main\index.html:115
 msgid "Our services"
 msgstr "Huduma zetu"
 
-#: .\templates\main\index.html:73
+#: .\templates\main\index.html:72
 msgid "What we do ..."
 msgstr "Tunachofanya ..."
 
-#: .\templates\main\index.html:107
+#: .\templates\main\index.html:106
 msgid "text1"
 msgstr ""
 "Tuna utaalam katika kutengeneza suluhisho za programu kwa watu binafsi, "
@@ -1330,11 +1442,11 @@ msgstr ""
 "zetu zimeundwa kwa kiwango na ufanisi, kuhakikisha kuwa biashara yako "
 "inasalia mbele katika mazingira ya kisasa ya ushindani."
 
-#: .\templates\main\index.html:135
+#: .\templates\main\index.html:128
 msgid "Empowering Businesses and Individuals"
 msgstr "Kuwezesha Biashara na Watu Binafsi"
 
-#: .\templates\main\index.html:139
+#: .\templates\main\index.html:132
 msgid "text2"
 msgstr ""
 "Iwe wewe ni mmiliki wa biashara au mtu binafsi, Redo Developers Inc. iko "
@@ -1345,7 +1457,7 @@ msgstr ""
 "changamoto zinazowakabili wateja wetu na jinsi suluhu zetu za programu "
 "zilizojumuishwa hukuwezesha kushinda vizuizi hivi na kufikia malengo yako."
 
-#: .\templates\main\index.html:147
+#: .\templates\main\index.html:136
 msgid "text3"
 msgstr ""
 "Jiunge na jumuiya ya watu binafsi na wafanyabiashara wenye mawazo ya mbeleni "
@@ -1353,7 +1465,7 @@ msgstr ""
 "Jiunge na jumuiya ya watu binafsi na wafanyabiashara wenye mawazo ya mbeleni "
 "ambao wanategemea programu yetu ya kisasa kuleta mafanikio yasiyo na kifani."
 
-#: .\templates\main\index.html:153
+#: .\templates\main\index.html:140
 msgid "text4"
 msgstr ""
 "Pata uzoefu wa mabadiliko ya uvumbuzi na ubora bora na Redo Developers Inc. "
@@ -1363,15 +1475,15 @@ msgstr ""
 "yetu thabiti ya kutoa masuluhisho ya hali ya juu imesababisha msururu wa "
 "hadithi za mafanikio, na kutuweka kando kama viongozi katika tasnia."
 
-#: .\templates\main\index.html:169
+#: .\templates\main\index.html:152
 msgid "Projects"
 msgstr "Miradi"
 
-#: .\templates\main\index.html:173
+#: .\templates\main\index.html:156
 msgid "Years of Experience"
 msgstr "Miaka ya Uzoefu"
 
-#: .\templates\main\index.html:177
+#: .\templates\main\index.html:160
 msgid "Happy Clients"
 msgstr "Wateja Wenye Furaha"
 
