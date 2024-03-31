@@ -53,8 +53,14 @@ def profile_detail(request, slug):
 
 
 def company_services(request):
-    return render(request, "main/services.html")
+    title = "Our Services | Redo Developers Inc."
+    description = "Explore the comprehensive range of services offered by Redo Developers Inc. We specialize in innovative solutions tailored to meet your needs."
+    context = {"title": title, "description": description}
+    return render(request, "main/services.html", context)
 
 
 def contact_us(request):
-    return render(request, "main/contact.html")
+    title = "Contact Us | Redo Developers Inc."
+    description = "Get in touch with Redo Developers Inc. for inquiries, partnerships, or any assistance you may need. We're here to help!"
+    context = {"title": title, "description": description}
+    return render(request, "main/contact.html", context)
