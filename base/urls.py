@@ -21,7 +21,6 @@ urlpatterns = [
             template_name="base/robots.txt", content_type="text/plain"
         ),
     ),
-    path("admin/", admin.site.urls),
     # path("", include("main.urls")),
     # path("accounts/", include("accounts.urls")),
     path(
@@ -35,6 +34,7 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path("", include("main.urls")),
+    path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
     prefix_default_language=True,
 )

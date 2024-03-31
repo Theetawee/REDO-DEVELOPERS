@@ -42,7 +42,7 @@ def company_profiles(request):
 def profile_detail(request, slug):
     profile = get_object_or_404(CompanyProfile, slug=slug)
     context = {"profile": profile}
-    return render(request, "main/profile_detail.html", context)
+    return render(request, f"main/{profile.template_name}.html", context)
 
 
 def company_services(request):

@@ -21,6 +21,7 @@ class CompanyProfile(models.Model):
         upload_to="company_profiles/", blank=True, null=True
     )
     slug = models.SlugField(blank=True, null=True, max_length=255)
+    template_name = models.CharField(max_length=255, default="default")
 
     def __str__(self):
         return self.name

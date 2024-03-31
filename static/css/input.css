@@ -4,3 +4,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.profile_title{
+  @apply font-semibold text-gray-300;
+}
+.profile_detail{
+  @apply text-white;
+}
