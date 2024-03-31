@@ -30,12 +30,9 @@ def about_company(request):
 
 def company_profiles(request):
     profiles = CompanyProfile.objects.all()
-    context = {
-        "title": "Profiles | Redo Developers Inc.",
-        "description": "Discover a transformative partnership with Redo Developers Inc. We're your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape.",
-        "profiles": profiles,
-    }
-
+    title = "Company Profiles | Redo Developers Inc."
+    description = "Explore profiles of individuals working at Redo Developers Inc. Discover the talented team behind our cutting-edge technology and innovative solutions driving success in today's digital landscape."
+    context = {"title": title, "description": description, "profiles": profiles}
     return render(request, "main/profiles.html", context)
 
 
