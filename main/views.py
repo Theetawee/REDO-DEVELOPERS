@@ -10,7 +10,7 @@ def index(request):
     testimonies = TestimonyMsg.objects.filter(lang=lang)
     title = _("Redo Developers Inc. | Pioneering Technology Solutions for Success")
     description = _(
-        "Discover a transformative partnership with Redo Developers Inc. We&#x27;re your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape."
+        "Discover a transformative partnership with Redo Developers Inc. We're your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape."
     )
     context = {
         "testimonies": testimonies,
