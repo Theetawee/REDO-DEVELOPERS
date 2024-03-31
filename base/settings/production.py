@@ -1,7 +1,7 @@
 from base.settings.base import *
 
 DEBUG = False
-ALLOWED_HOSTS = ["dev.redodevelopers.site","redodevelopers.site"]
+ALLOWED_HOSTS = ["www.redodevelopers.site","redodevelopers.site"]
 
 
 # Replace the DATABASES section of your settings.py with this
