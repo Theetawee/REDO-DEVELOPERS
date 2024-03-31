@@ -41,7 +41,14 @@ def company_profiles(request):
 
 def profile_detail(request, slug):
     profile = get_object_or_404(CompanyProfile, slug=slug)
-    context = {"profile": profile}
+    roles = profile.position.all()
+
+    role_names = ", ".join(role.name for role in roles)
+
+    title = f"As a {role_names}, Learn more about {profile.name}'s Life, roles and contributions at Redo Developers Inc."
+
+    description = f"{profile.name},"
+    context = {"profile": profile, "title": title, "description": description}
     return render(request, f"main/{profile.template_name}.html", context)
 
 
