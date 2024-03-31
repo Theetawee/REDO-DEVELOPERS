@@ -51,9 +51,36 @@
       <a class="text-white hover:text-gray-400" href="/">{% trans "Home" %}</a>
     </li>
     <li>
-      <a class="text-white hover:text-gray-400" href="{% url 'about' %}"
-        >{% trans "About us" %}</a
-      >
+      
+<button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+  Company
+</button>
+
+<!-- Dropdown menu -->
+<div id="dropdownHover" class="z-10 hidden bg-gray-800 divide-y divide-gray-800 rounded border border-gray-800 shadow w-96 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-200 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+    <li>
+        <a href="{% url 'about' %}" class="block px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">
+            <p class="text-lg mb-1 text-white">About Redo Developers Inc.</p>
+            <span>
+                Explore the history and future of Redo Developers Inc.
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'profiles' %}" class="block px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">
+            <p class="text-lg mb-1 text-white">
+                Company Profiles
+            </p>
+            <span>
+                View our collection of company profiles.
+            </span>
+        </a>
+    </li>
+</ul>
+
+</div>
+
     </li>
     <li>
       <a class="text-white hover:text-gray-400" href="{% url 'services' %}"
@@ -197,7 +224,7 @@
     <div class="mt-auto">
       <div class="pt-6">
         <a
-          class="block px-4 py-3 mb-3 text-center font-semibold leading-none bg-white hover:bg-gray-100 text-gray-900 rounded"
+          class="block px-4 py-3 mb-3 text-center font-semibold leading-none bg-white hover:bg-gray-700 text-gray-900 rounded"
           href="{% url 'contact' %}"
           >{% trans "Contact us" %}</a
         >
