@@ -1,4 +1,27 @@
-{% extends 'base/base.html' %} {% block content %} {% load static %} 
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "image": "{% static 'images/512.png' %}",
+      "url": "https://www.redodevelopers.site",
+      "sameAs": ["https://twitter.com/redodevs", "https://www.redodevelopers.site/company/about/"],
+      "logo": "{% static 'images/512.png' %}",
+      "name": "Redo Developers Inc.",
+      "description": "Discover a transformative partnership with Redo Developers Inc. We&#x27;re your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape.",
+      "email": "support@redodevelopers.site",
+      "telephone": "+256779730256",
+      "foundingDate": "2021-03-02"
+    }
+    </script>
+
+
+{% endblock %}
+
+{% block content %}  
 {% load i18n %}
 
 <section class="bg-gray-900 py-8">

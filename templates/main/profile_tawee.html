@@ -1,5 +1,45 @@
 {% extends 'base/base.html' %}
  {% block head %} 
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "dateCreated": "2021-03-02T12:34:00-05:00",
+      "dateModified": "2024-03-31T14:53:00-05:00",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Khaotungkulmethee Pattawee Drake",
+        "alternateName": "Lubega Frank",
+        "identifier": "01",
+        "interactionStatistic": [{
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/FollowAction",
+          "userInteractionCount": 100
+        },{
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/LikeAction",
+          "userInteractionCount": 240
+        }],
+        "agentInteractionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WriteAction",
+          "userInteractionCount": 10
+        },
+        "description": "I started this",
+        "image": "{{profile.image}}",
+        "sameAs": [
+          "https://twitter.com/theetawee",
+          "https://www.waanverse.com/theetawee"
+        ]
+      }
+    }
+    </script>
+  
+
+
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
