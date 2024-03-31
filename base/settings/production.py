@@ -20,8 +20,8 @@ DATABASES = {
 }
 
 CLOUDINARY_STORAGE = {
-    "CLOUD_NAME": "dnb8rethz",
-    "API_KEY": "123456789",
+    "CLOUD_NAME": "de0i3vkvl",
+    "API_KEY": "543259186992127",
     "API_SECRET": os.environ.get("API_SECRET"),
 }
 
