@@ -30,6 +30,7 @@ urlpatterns = [
         name="django.contrib.sitemaps.views.sitemap",
     ),
     path("i18n/", include("django.conf.urls.i18n")),
+    path("", include("main.urls")),
 ]
 
 urlpatterns += i18n_patterns(
