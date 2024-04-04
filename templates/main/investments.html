@@ -1,41 +1,57 @@
 {% extends 'base/base.html' %} {% block content %}
 
-
-
-
-
-
-<div id="sticky-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex justify-between w-full p-4 border-b bg-primary-700 border-primary-600">
-    <div class="flex items-center mx-auto">
-        <p class="flex items-center text-sm font-normal text-white">
-            <span class="inline-flex p-1 me-3  rounded-full bg-primary-100 w-8 h-8 items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-primary-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 19">
-                    <path d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z"/>
-                </svg>
-                <span class="sr-only">Light bulb</span>
-            </span>
-            <span>This article is intended to address {{brand}}, coming soon to empower investors with innovative solutions.</span>
-        </p>
-    </div>
-    <div class="flex items-center">
-        <button data-dismiss-target="#sticky-banner" type="button" class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-            </svg>
-            <span class="sr-only">Close banner</span>
-        </button>
-    </div>
+<div
+  id="sticky-banner"
+  tabindex="-1"
+  class="fixed top-0 start-0 z-50 flex justify-between w-full p-4 border-b bg-primary-700 border-primary-600">
+  <div class="flex items-center mx-auto">
+    <p class="flex items-center text-sm font-normal text-white">
+      <span
+        class="inline-flex p-1 me-3 rounded-full bg-primary-100 w-8 h-8 items-center justify-center flex-shrink-0">
+        <svg
+          class="w-5 h-5 text-primary-400"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 18 19">
+          <path
+            d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z" />
+        </svg>
+        <span class="sr-only">Light bulb</span>
+      </span>
+      <span
+        >This article is intended to address {{brand}}, coming soon to empower
+        investors with innovative solutions.</span
+      >
+    </p>
+  </div>
+  <div class="flex items-center">
+    <button
+      data-dismiss-target="#sticky-banner"
+      type="button"
+      class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white">
+      <svg
+        class="w-3 h-3"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 14 14">
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+      </svg>
+      <span class="sr-only">Close banner</span>
+    </button>
+  </div>
 </div>
-
-
-
-
-
 
 <section class="px-4">
   <div class="py-32 max-w-screen-lg mx-auto">
     <h1 class="text-4xl mb-10 text-center">
-        Celebrate Financial Freedom: Navigating the Market Maze with Confidence
+      Celebrate Financial Freedom: Navigating the Market Maze with Confidence
     </h1>
 
     <blockquote class="text-lg italic font-semibold text-center text-white">
@@ -52,16 +68,20 @@
   </div>
   <div class="max-w-screen-xl mx-auto text-gray-100">
     <div class="max-w-2xl py-8">
-        <h2 class="text-3xl mb-6">Empowering your financial journey through;</h2>
+        <h2 class="text-3xl mb-6">Empowering Your Long-Term Financial Journey</h2>
+        <p class="mb-6">Embark on a journey of sustainable growth and financial security with our innovative investment platform. We achieve this through fractional ownership of stocks in carefully selected companies, chosen for their resilience and potential in the market.</p>
+        <p class="mb-6">While our focus is on long-term success, we offer investors the ability to monitor their growth and market dynamics with ease.</p>
         <ul class="list-disc pl-6">
-            <li class="mb-3">Sustainable Growth: Witness your investment flourish in tandem with the market, as a portion of the profits is disbursed to you every month, creating a dependable income stream.</li>
+            <li class="mb-3">Sustainable Growth: Watch your investment thrive alongside the market, with profits disbursed monthly, providing a reliable income stream.</li>
             
-            <li class="mb-3">Confidence: Our seasoned expertise serves as your guiding light, adeptly navigating market fluctuations and shielding your principal investment from undue risks.</li>
+            <li class="mb-3">Confidence: Rely on our seasoned expertise to navigate market fluctuations, safeguarding your principal investment from undue risks.</li>
             
             <li class="mb-3">Focus on What Truly Matters: Entrust the complexities of investment management to us. Relax and find peace of mind, knowing that your financial well-being is meticulously tended to by capable hands.</li>
         </ul>
     </div>
-    <div class="my-6 bg-gray-800 px-4 py-8 rounded-xl shadow border border-gray-700">
+    
+    <div
+      class="my-6 bg-gray-800 px-4 py-8 rounded-xl shadow border border-gray-700">
       <h2 class="title">The Vision Behind {{brand}}</h2>
       <p>
         The genesis of {{brand}} stems from my personal odyssey navigating the
@@ -101,23 +121,23 @@
       </p>
     </div>
 
-    <div class="py-8 relative my-16">    
-        <div class="border-t-4 absolute left-0 top-0 border-l-4 h-20 w-20"></div>
+    <div class="py-8 relative my-16">
+      <div class="border-t-4 absolute left-0 top-0 border-l-4 h-20 w-20"></div>
 
-    <div class="px-4">
-      <h2 class="title">Diversification for Stability:</h2>
-      <p>
-        In today's tumultuous market landscape, diversification isn't merely a
-        strategy; it's a lifeline. Our trust fund features a meticulously
-        curated portfolio spanning domestic and international markets. From
-        industry stalwarts to burgeoning enterprises, we leave no stone unturned
-        in our quest for superlative returns. By dispersing risk across varied
-        asset classes, we fortify your financial fortress against market
-        vicissitudes, ensuring your security remains paramount.
-      </p>
-    </div>
-    <div
-      class="border-b-4 absolute bottom-0 right-0 ml-auto border-r-4 h-20 w-20"></div>
+      <div class="px-4">
+        <h2 class="title">Diversification for Stability:</h2>
+        <p>
+          In today's tumultuous market landscape, diversification isn't merely a
+          strategy; it's a lifeline. Our trust fund features a meticulously
+          curated portfolio spanning domestic and international markets. From
+          industry stalwarts to burgeoning enterprises, we leave no stone
+          unturned in our quest for superlative returns. By dispersing risk
+          across varied asset classes, we fortify your financial fortress
+          against market vicissitudes, ensuring your security remains paramount.
+        </p>
+      </div>
+      <div
+        class="border-b-4 absolute bottom-0 right-0 ml-auto border-r-4 h-20 w-20"></div>
     </div>
 
     <div class="py-16 border-y border-gray-800">
@@ -159,18 +179,25 @@
     </div>
 
     <div class="py-8">
-        <p class="mb-4">
-            In a world replete with transient opportunities and hollow promises, our trust fund stands as an emblem of steadfastness and triumph. We invite you to join our enclave of empowered investors and seize control of your financial destiny. With us, there are no lingering doubts, only certainties – certainties that pave the path to affluence and serenity. Seize this opportunity and unlock the gateway to a radiant tomorrow.
-        </p>
-        <p >
-            For more information, please contact us via:
-        </p>
-        <ul class="list-disc pl-6 grid grid-cols-1 gap-2">
-            <li>Email: <a class="text-sky-500" href="mailto:tawee.drake@gmail.com">tawee.drake@gmail.com</a></li>
-            <li>WhatsApp: +256779730256</li>
-        </ul>
+      <p class="mb-4">
+        In a world replete with transient opportunities and hollow promises, our
+        trust fund stands as an emblem of steadfastness and triumph. We invite
+        you to join our enclave of empowered investors and seize control of your
+        financial destiny. With us, there are no lingering doubts, only
+        certainties – certainties that pave the path to affluence and serenity.
+        Seize this opportunity and unlock the gateway to a radiant tomorrow.
+      </p>
+      <p>For more information, please contact us via:</p>
+      <ul class="list-disc pl-6 grid grid-cols-1 gap-2">
+        <li>
+          Email:
+          <a class="text-sky-500" href="mailto:tawee.drake@gmail.com"
+            >tawee.drake@gmail.com</a
+          >
+        </li>
+        <li>WhatsApp: +256779730256</li>
+      </ul>
     </div>
-    
   </div>
 </section>
 
