@@ -1,62 +1,41 @@
 {% load static %}
-{% load i18n %}
-{% get_current_language as LANGUAGE_CODE %}
 
-<link
-  rel="icon"
-  type="image/svg+xml"
-  href="{% static 'images/logo.svg' %}" />
-<link
-  rel="shortcut icon"
-  href="{% static 'images/favicon.ico' %}"
-  type="image/x-icon" />
-  {% if image %}
-  <meta
-  property="twitter:image"
-  content="{{image}}" />
+<link rel="icon" type="image/svg+xml" href="{% static 'images/logo.svg' %}" />
+<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
 
-  <meta property="og:image" content="{{image}}" />
-  {% else %}
-  <meta
-  property="twitter:image"
-  content="{% static 'images/logo.png' %}" />
-
-  <meta property="og:image" content="{% static 'images/logo.png' %}" />
-  {% endif %}
-  <meta
-  property="og:title"
-  content="{{title}}" />
-<meta property="og:description" content="{{description}}" />
-<meta property="og:url" content="{{request.build_absolute_uri}}" />
-<meta property="og:type" content="{{type|default:'website'}}" />
-<meta property="og:determiner" content="the" />
-<meta property="og:locale" content="{{LANGUAGE_CODE}}" />
-<meta property="og:site_name" content="Redo Developers Inc." />
-<meta property="og:image:type" content="image/png" />
-<meta
-  property="og:image:alt"
-  content="Welcome to Redo Developers Inc. banner" />
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:site" content="@redodevs" />
-<meta
-  property="twitter:title"
-  content="{{title}}" />
-<meta
-  property="twitter:description"
-  content="{{description}}" />
-  
-<meta property="twitter:creator" content="@theetawee" />
-<meta
-  property="twitter:image:alt"
-  content="Welcome to Redo Developers Inc. banner" />
-<meta property="url" content="{{request.build_absolute_uri}}" />
+  <meta property="url" content="{{request.build_absolute_uri}}" />
 <meta property="identifier-URL" content="{{request.build_absolute_uri}}" />
-<meta
-  name="robots"
-  content="follow, index, max-snippet:-1, max-image-preview:standard, max-video-preview:-1" />
-<title>
-  {{title}}
-</title>
+<meta name="robots" content="follow, index, max-snippet:-1, max-image-preview:standard, max-video-preview:-1" />
 
-<meta name="language" content="{{LANGUAGE_CODE}}" />
-<meta property="og:url" content="{{request.build_absolute_uri}}" />
+
+
+
+
+
+
+
+<!-- HTML Meta Tags -->
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:type" content="{{type|default:'website'}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+{% if image %}
+<meta property="og:image" content="{{image}}">
+<meta name="twitter:image" content="{{image}}">
+
+{% else %}
+<meta property="og:image" content="{% static 'images/logo.png' %}">
+<meta name="twitter:image" content="{% static 'images/logo.png' %}">
+{% endif %}
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="redodevelopers.site">
+<meta property="twitter:url" content="{{request.build_absolute_uri}}">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{description}}">
+
