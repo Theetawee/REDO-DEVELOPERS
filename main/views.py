@@ -64,7 +64,7 @@ def contact_us(request):
 
 
 def investments(request):
-    brand = "Wealtify"
+    brand = "FinGuard"
     title = (
         f"Unlock Financial Freedom: Navigate the Market Maze with Confidence | {brand}"
     )
