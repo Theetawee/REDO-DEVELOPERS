@@ -22,3 +22,6 @@ sqlparse
 typing_extensions
 tzdata
 urllib3
+
+
+    <!-- {{ hreflang_tags | safe }} -->
