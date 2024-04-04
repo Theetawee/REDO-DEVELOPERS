@@ -65,5 +65,9 @@ def contact_us(request):
 
 def investments(request):
     brand = "Wealtify"
-    context = {"brand": brand}
+    title = (
+        f"Unlock Financial Freedom: Navigate the Market Maze with Confidence | {brand}"
+    )
+    Description = f"Discover the path to financial security with {brand}. Our expertly managed investment platform offers a roadmap through the market maze, ensuring consistent growth and stability. Join us today and seize control of your financial future!"
+    context = {"brand": brand, "title": title, "Description": Description}
     return render(request, "main/investments.html", context)
