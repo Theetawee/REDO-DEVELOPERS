@@ -52,7 +52,7 @@
     </li>
     <li>
       
-<button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+<button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
   Company
 </button>
 
@@ -60,7 +60,7 @@
 <div id="dropdownHover" class="z-10 hidden bg-gray-800 divide-y divide-gray-800 rounded border border-gray-800 shadow w-96 dark:bg-gray-700">
     <ul class="py-2 text-sm text-gray-200 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
     <li>
-        <a href="{% url 'about' %}" class="block px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">
+        <a  href="{% url 'about' %}" class="block px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">
             <p class="text-lg mb-1 text-white">About Redo Developers Inc.</p>
             <span>
                 Explore the history and future of Redo Developers Inc.
@@ -107,7 +107,7 @@
       </button>
     </div>
     {% get_current_language as LANGUAGE_CODE %}
-    <form method="post" action="{% url 'set_language' %}" id="lang-form">
+    <!-- <form method="post" action="{% url 'set_language' %}" id="lang-form">
       {% csrf_token %}
       <input name="next" type="hidden" value="{{ redirect_to }}" />
 
@@ -129,7 +129,7 @@
         <option value="sw">{% trans "Swahili" %}</option>
         {% endif %}
       </select>
-    </form>
+    </form> -->
   </div>
 </nav>
 <div class="navbar-menu relative z-50 hidden">
@@ -234,12 +234,12 @@
 </div>
 
 <script>
-  const dropdown = document.getElementById("lang-dropdown");
+  /*const dropdown = document.getElementById("lang-dropdown");
   const form = document.getElementById("lang-form");
 
   dropdown.addEventListener("change", () => {
     form.submit();
-  });
+  });*/
 
   document.addEventListener("DOMContentLoaded", function () {
     // open

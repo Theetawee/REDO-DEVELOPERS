@@ -6,7 +6,7 @@ from django.contrib.sitemaps.views import sitemap
 from base.sitemaps import StaticViewSitemap
 from django.views.generic.base import TemplateView
 from base.utils import service_worker, manifest, offline
-from django.conf.urls.i18n import i18n_patterns
+# from django.conf.urls.i18n import i18n_patterns
 
 sitemaps = {"others": StaticViewSitemap}
 
@@ -21,8 +21,8 @@ urlpatterns = [
             template_name="base/robots.txt", content_type="text/plain"
         ),
     ),
-    # path("", include("main.urls")),
-    # path("accounts/", include("accounts.urls")),
+    path("", include("main.urls")),
+    path("accounts/", include("accounts.urls")),
     path(
         "sitemap.xml",
         sitemap,
@@ -30,15 +30,15 @@ urlpatterns = [
         name="django.contrib.sitemaps.views.sitemap",
     ),
     path("i18n/", include("django.conf.urls.i18n")),
-    path("", include("main.urls")),
+    path("admin/", admin.site.urls),
 ]
 
-urlpatterns += i18n_patterns(
-    path("", include("main.urls")),
-    path("admin/", admin.site.urls),
-    path("accounts/", include("accounts.urls")),
-    prefix_default_language=True,
-)
+# urlpatterns += i18n_patterns(
+#     path("", include("main.urls")),
+#     path("admin/", admin.site.urls),
+#     path("accounts/", include("accounts.urls")),
+#     prefix_default_language=True,
+# )
 
 if settings.DEBUG:
     import debug_toolbar

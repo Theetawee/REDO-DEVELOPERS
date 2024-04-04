@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://files.redodevelopers.site" />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
     <link rel="preconnect" href="https://res.cloudinary.com" />
-    {{ hreflang_tags | safe }}
+    <!-- {{ hreflang_tags | safe }} -->
 
     {% block head %}
     {% endblock %}
@@ -23,7 +23,7 @@
     <script src="{% static 'js/main.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-gray-900 text-white" id="html">
     {% include 'base/messages.html' %}
     {% include 'base/nav.html' %}
     <main class="min-h-screen">
