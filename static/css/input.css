@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
 }
 @tailwind base;
 @tailwind components;
@@ -10,4 +10,8 @@
 }
 .profile_detail{
   @apply text-white;
+}
+
+.title{
+  @apply text-2xl mb-4 text-white;
 }

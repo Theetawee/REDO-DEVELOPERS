@@ -61,3 +61,9 @@ def contact_us(request):
     description = "Get in touch with Redo Developers Inc. for inquiries, partnerships, or any assistance you may need. We're here to help!"
     context = {"title": title, "description": description}
     return render(request, "main/contact.html", context)
+
+
+def investments(request):
+    brand = "Wealtify"
+    context = {"brand": brand}
+    return render(request, "main/investments.html", context)
