@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import TestimonyMsg
 from .models import CompanyProfile
 from django.utils.translation import gettext as _, get_language
+from django.templatetags.static import static
 
 
 # Create your views here.
@@ -68,6 +69,14 @@ def investments(request):
     title = (
         f"Unlock Financial Freedom: Navigate the Market Maze with Confidence | {brand}"
     )
-    Description = f"Discover the path to financial security with {brand}. Our expertly managed investment platform offers a roadmap through the market maze, ensuring consistent growth and stability. Join us today and seize control of your financial future!"
-    context = {"brand": brand, "title": title, "Description": Description}
+    image = static("images/invest.png")
+    type = "article"
+    description = f"Discover the path to financial security with {brand}. Our expertly managed investment platform offers a roadmap through the market maze, ensuring consistent growth and stability. Join us today and seize control of your financial future!"
+    context = {
+        "brand": brand,
+        "title": title,
+        "description": description,
+        "image": image,
+        "type": type,
+    }
     return render(request, "main/investments.html", context)
