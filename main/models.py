@@ -38,20 +38,11 @@ class Testimony(models.Model):
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to="testimonies/", blank=True, null=True)
     rating = models.IntegerField(default=0)
+    title = models.CharField(max_length=255, blank=True, null=True)
+    msg = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return f"{self.name}"
-
-
-class TestimonyMsg(models.Model):
-    LANGUAGES = settings.LANGUAGES
-    testmony = models.ForeignKey(Testimony, on_delete=models.CASCADE)
-    title = models.CharField(max_length=255)
-    msg = models.TextField()
-    lang = models.CharField(max_length=255, choices=settings.LANGUAGES, default="en")
-
-    def __str__(self):
-        return f"{self.testmony.name}- {self.lang}"
 
 
 @receiver(post_save, sender=CompanyProfile)

@@ -1,18 +1,14 @@
 from django.shortcuts import render, get_object_or_404
-from .models import TestimonyMsg
-from .models import CompanyProfile
-from django.utils.translation import gettext as _, get_language
+from .models import CompanyProfile, Testimony
 from django.templatetags.static import static
+from django.conf import settings
 
 
 # Create your views here.
 def index(request):
-    lang = get_language()
-    testimonies = TestimonyMsg.objects.filter(lang=lang)
-    title = _("Redo Developers Inc. | Pioneering Technology Solutions for Success")
-    description = _(
-        "Discover a transformative partnership with Redo Developers Inc. We're your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape."
-    )
+    testimonies = Testimony.objects.all()
+    title = f"{settings.APP_NAME} | Pioneering Technology Solutions for Success"
+    description = f"Discover a transformative partnership with {settings.APP_NAME} We're your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape."
     context = {
         "testimonies": testimonies,
         "title": title,
@@ -23,16 +19,16 @@ def index(request):
 
 def about_company(request):
     context = {
-        "title": "About Redo Developers Inc. | Pioneering Innovation in Software and Technological services.",
-        "description": "Explore the journey of Redo Developers Inc. – where vision meets innovation. Learn about our commitment to reshaping the digital landscape, crafting software solutions that transcend boundaries, and our impact on industries and society.",
+        "title": f"About {settings.APP_NAME} | Pioneering Innovation in Software and Technological services.",
+        "description": f"Explore the journey of {settings.APP_NAME} – where vision meets innovation. Learn about our commitment to reshaping the digital landscape, crafting software solutions that transcend boundaries, and our impact on industries and society.",
     }
     return render(request, "main/about.html", context)
 
 
 def company_profiles(request):
     profiles = CompanyProfile.objects.all()
-    title = "Company Profiles | Redo Developers Inc."
-    description = "Explore profiles of individuals working at Redo Developers Inc. Discover the talented team behind our cutting-edge technology and innovative solutions driving success in today's digital landscape."
+    title = f"Company Profiles | {settings.APP_NAME}"
+    description = f"Explore profiles of individuals working at {settings.APP_NAME} Discover the talented team behind our cutting-edge technology and innovative solutions driving success in today's digital landscape."
     context = {"title": title, "description": description, "profiles": profiles}
     return render(request, "main/profiles.html", context)
 
@@ -43,7 +39,7 @@ def profile_detail(request, slug):
 
     role_names = ", ".join(role.name for role in roles)
 
-    title = f"As a {role_names}, Learn more about {profile.name}'s Life, roles and contributions at Redo Developers Inc."
+    title = f"As a {role_names}, Learn more about {profile.name}'s Life, roles and contributions at {settings.APP_NAME}"
 
     description = f"{profile.name},"
     context = {"profile": profile, "title": title, "description": description}
@@ -51,15 +47,15 @@ def profile_detail(request, slug):
 
 
 def company_services(request):
-    title = "Our Services | Redo Developers Inc."
-    description = "Explore the comprehensive range of services offered by Redo Developers Inc. We specialize in innovative solutions tailored to meet your needs."
+    title = f"Our Services | {settings.APP_NAME}"
+    description = f"Explore the comprehensive range of services offered by {settings.APP_NAME} We specialize in innovative solutions tailored to meet your needs."
     context = {"title": title, "description": description}
     return render(request, "main/services.html", context)
 
 
 def contact_us(request):
-    title = "Contact Us | Redo Developers Inc."
-    description = "Get in touch with Redo Developers Inc. for inquiries, partnerships, or any assistance you may need. We're here to help!"
+    title = f"Contact Us | {settings.APP_NAME}"
+    description = f"Get in touch with {settings.APP_NAME} for inquiries, partnerships, or any assistance you may need. We're here to help!"
     context = {"title": title, "description": description}
     return render(request, "main/contact.html", context)
 
