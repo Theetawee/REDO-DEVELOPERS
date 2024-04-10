@@ -1,9 +1,7 @@
 {% load static %}
-{% load i18n %}
-{% get_current_language as LANGUAGE_CODE %}
 
 <!DOCTYPE html>
-<html lang="{{ LANGUAGE_CODE }}" style="color-scheme: dark;" prefix="og: http://ogp.me/ns#">
+<html lang="en" style="color-scheme: dark;" prefix="og: http://ogp.me/ns#">
 <head>
     <meta name="google-site-verification" content="heRVHD14ljX8mQjsjZeVW6SOGMZXI6bQPZIsfrPjk1Q" />
     <meta charset="UTF-8">
@@ -21,7 +19,7 @@
     <script src="{% static 'js/main.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
 </head>
-<body class="bg-gray-900 text-white" id="html">
+<body class="bg-white text-gray-800" id="html">
     {% include 'base/messages.html' %}
     {% include 'base/nav.html' %}
     <main class="min-h-screen">

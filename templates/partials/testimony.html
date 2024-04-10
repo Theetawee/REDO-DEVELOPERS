@@ -1,7 +1,7 @@
 {% load static %}
 <div class="keen-slider__slide w-full mx-auto">
             <blockquote
-              class="flex h-full flex-col w-full justify-between bg-gray-800/20 rounded-xl shadow p-6 sm:p-8 lg:p-12"
+              class="flex h-full flex-col w-full justify-between bg-gray-100 rounded-xl shadow p-6 sm:p-8 lg:p-12"
             >
               <div>
                 <div class="flex gap-0.5 text-primary-500">
@@ -63,7 +63,7 @@
 
                 <div class="mt-4">
                   
-                  <p class="mt-4 leading-relaxed text-white">
+                  <p class="mt-4 leading-relaxed text-gray-700">
                   {{testimony.msg}}  
                   </p>
                 </div>
@@ -73,10 +73,10 @@
                   <img src="{% static 'images/default.webp' %}" alt="{{testimony.name}}" class="w-12 mx-auto h-12 rounded-full">
                 </div>
                 <div class="flex items-center justify-center flex-col">
-                <span class="text-lg text-gray-200 text-center">
+                <span class="text-lg text-gray-900 text-center">
               {{testimony.name}}
               </span>
-              <span class="italic text-gray-300 block">
+              <span class="italic text-gray-500 block">
                 &mdash; {{testimony.title}}
                 </span>
                 </div>

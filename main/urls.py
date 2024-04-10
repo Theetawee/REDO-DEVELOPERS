@@ -12,7 +12,7 @@ from .views import (
 
 urlpatterns = [
     path("", index, name="home"),
-    path("company/about/", about_company, name="about"),
+    path("about-company/", about_company, name="about"),
     path("company/profiles/", company_profiles, name="profiles"),
     path("company/profiles/<slug:slug>/", profile_detail, name="detail"),
     path("services/", company_services, name="services"),
