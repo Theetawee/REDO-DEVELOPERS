@@ -10,8 +10,8 @@
       "url": "https://www.redodevelopers.site",
       "sameAs": ["https://twitter.com/redodevs", "https://www.redodevelopers.site/company/about/","https://www.facebook.com/redodevelopersinc/"],
       "logo": "{% static 'images/512.png' %}",
-      "name": "Redo Developers Inc.",
-      "description": "Discover a transformative partnership with Redo Developers Inc. We&#x27;re your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape.",
+      "name": "{{APP_NAME}}",
+      "description": "Discover a transformative partnership with {{APP_NAME}} We&#x27;re your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape.",
       "email": "support@redodevelopers.site",
       "telephone": "+256779730256",
       "foundingDate": "2021-03-02"
@@ -36,9 +36,9 @@
       class="z-10 bg-black/50 h-full w-full flex items-center justify-center absolute">
       <div class="text-center max-w-4xl p-4 mx-auto">
         <h1 class="text-white text-5xl font-bold mb-6">
-            {% trans "Welcome to" %}
+            Welcome to
           <div class="inline-flex items-center justify-center flex-col">
-            Redo Developers Inc.<svg
+            {{APP_NAME}}<svg
               class="w-full h-6"
               viewBox="0 0 554 43"
               version="1.1"
@@ -69,17 +69,17 @@
           </div>
         </h1>
         <p class="text-white text-lg italic mb-8">
-          — {% trans "subtitle1" %} 
+          — Empowering Your Vision with Innovative Software Solutions 
         </p>
         <div class="flex items-center justify-center">
           <a
             class="border hover:bg-white/10 rounded border-white text-white px-6 py-2.5 text-lg font-medium"
             href="{% url 'contact' %}"
-            >{% trans "Contact us" %}</a
+            >Contact us</a
           ><a
             class="py-2.5 rounded hidden sm:block px-6 bg-primary-500 text-white ml-6 text-lg font-medium hover:bg-primary-500/80"
             href="{% url 'services' %}"
-            >{% trans "Our services" %}</a
+            >Our services</a
           >
         </div>
       </div>
@@ -91,7 +91,7 @@
   <div>
     <h2
       class="text-3xl flex items-center justify-center flex-col font-medium text-white text-center mb-3">
-      {% trans "What we do ..." %}
+      What we do
       <svg
         class="w-full h-4"
         viewBox="0 0 554 43"
@@ -125,8 +125,8 @@
       class="px-4 py-8 flex-wrap  flex items-center justify-center">
       <div>
         <p class="text-lg text-gray-100 mb-8">
-          {% trans "text1" %}
-          </p>
+          We specialize in developing software solutions for individuals, startups, and enterprises. Whether you're looking for a simple web app, a mobile application, or enterprise-level software, we're your go-to partner for all your software needs. Our products are built to scale and efficiency, ensuring that your business stays ahead in today's competitive landscape.
+      </p>
       </div>
       <div class="w-full md:ml-4 flex  items-center justify-center">
         <button class="outline-none">
@@ -134,7 +134,7 @@
             class="bg-gray-900 border-gray-800 border hover:bg-gray-800/80 font-medium text-lg px-6 py-3 rounded text-white"
             href="{% url 'services' %}"
             >
-            {% trans "Our services" %}
+            Our services
             </a
           >
         </button>
@@ -147,20 +147,19 @@
   <div
     class="flex items-start gap-4 mb-32 sm:flex-nowrap flex-wrap justify-center">
     <div class="max-w-lg w-full">
-      <h2 class="text-3xl">{% trans "Empowering Businesses and Individuals"%}</h2>
+      <h2 class="text-3xl">Empoweringinesses and Individuals</h2>
     </div>
     <div class="grid grid-cols-1 gap-6">
       <p>
-        {% trans "text2" %}
-        </p>
+        Whether you're a business owner or an individual, Redo Developers Inc. is here to support you every step of the way. Exploring the challenges our customers face and how our integrated software solutions empowers you to overcome these obstacles and achieve your goals.
+    </p>
 
       <p>
-        {% trans "text3" %}
-       </p>
+        Join the community of forward-thinking individuals and businesses who rely on our cutting-edge software to drive unparalleled success.
+   </p>
 
       <p>
-        {% trans "text4" %}
-        </p>
+        Experience the transformative synergy of innovation and excellence with Redo Developers Inc. Our unwavering commitment to delivering top-notch solutions has led to a trail of success stories, setting us apart as leaders in the industry.    </p>
     </div>
   </div>
 
@@ -171,15 +170,15 @@
       <div class="grid sm:grid-cols-3 grid-cols-1 gap-10">
         <div class="flex flex-col items-center justify-center">
           <p class="text-3xl font-bold">100+</p>
-          <p>{% trans "Projects" %}</p>
+          <p>Projects</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <p class="text-3xl font-bold">3+</p>
-          <p>{% trans "Years of Experience" %}</p>
+          <p>Years of Experience</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <p class="text-3xl font-bold">100+</p>
-          <p>{% trans "Happy Clients" %}</p>
+          <p>Happy Clients</p>
         </div>
       </div>
     </div>

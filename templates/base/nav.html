@@ -1,4 +1,4 @@
-{% load i18n %} {% load static %}
+{% load static %}
 
 <nav
   id="nav_bar_set"
@@ -10,7 +10,7 @@
   <ul
     class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-10">
     <li>
-      <a class="text-white hover:text-gray-400" href="/">{% trans "Home" %}</a>
+      <a class="text-white hover:text-gray-400" href="/">Home</a>
     </li>
     <li>
       <button
@@ -35,9 +35,9 @@
             <a
               href="{% url 'about' %}"
               class="block px-4 py-2 hover:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white">
-              <p class="text-lg mb-1 text-white">About Redo Developers Inc.</p>
+              <p class="text-lg mb-1 text-white">About {{APP_NAME}}</p>
               <span>
-                Explore the history and future of Redo Developers Inc.
+                Explore the history and future of {{APP_NAME}}
               </span>
             </a>
           </li>
@@ -54,7 +54,7 @@
     </li>
     <li>
       <a class="text-white hover:text-gray-400" href="{% url 'services' %}"
-        >{% trans "Services" %}</a
+        >Services</a
       >
     </li>
   </ul>
@@ -62,7 +62,7 @@
     <a
       class="hidden lg:inline-block py-2 px-5 bg-primary-500 hover:bg-primary-600 text-white font-bold rounded transition duration-200"
       href="{% url 'contact' %}"
-      >{% trans "Contact us" %}</a
+      >Contact us</a
     >
 
     <div class="lg:hidden">
@@ -76,31 +76,7 @@
         </svg>
       </button>
     </div>
-    {% get_current_language as LANGUAGE_CODE %}
-    <!-- <form method="post" action="{% url 'set_language' %}" id="lang-form">
-      {% csrf_token %}
-      <input name="next" type="hidden" value="{{ redirect_to }}" />
-
-      <select
-        id="lang-dropdown"
-        name="language"
-        class="bg-gray-800 text-xs focus:ring-0 border-0 text-white border-gray-700 rounded block w-full">
-        {% if LANGUAGE_CODE == 'en' %}
-        <option selected value="en">{% trans "English" %}</option>
-        {% else %}
-        <option value="en">{% trans "English" %}</option>
-        {% endif %} {% if LANGUAGE_CODE == 'fr' %}
-        <option selected value="fr">{% trans "French" %}</option>
-        {% else %}
-        <option value="fr">{% trans "French" %}</option>
-        {% endif %} {% if LANGUAGE_CODE == 'sw' %}
-        <option selected value="sw">{% trans "Swahili" %}</option>
-        {% else %}
-        <option value="sw">{% trans "Swahili" %}</option>
-        {% endif %}
-      </select>
-    </form> -->
-  </div>
+     </div>
 </nav>
 <div class="navbar-menu relative z-50 hidden">
   <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -134,21 +110,21 @@
           <a
             class="block p-4 text-sm font-semibold text-white hover:bg-primary450 hover:text-primary-600 rounded"
             href="/"
-            >{% trans "Home" %}</a
+            >Home</a
           >
         </li>
         <li class="mb-1">
           <a
             class="block p-4 text-sm font-semibold text-gray-400 hover:bg-primary-50 hover:text-primary-600 rounded"
             href="{% url 'about' %}"
-            >{% trans "About us" %}</a
+            >About us</a
           >
         </li>
         <li class="mb-1">
           <a
             class="block p-4 text-sm font-semibold text-gray-400 hover:bg-primary-50 hover:text-primary-600 rounded"
             href="{% url 'services' %}"
-            >{% trans "Services" %}</a
+            >Services</a
           >
         </li>
       </ul>
@@ -158,7 +134,7 @@
         <a
           class="block px-4 py-3 mb-3 text-center font-semibold leading-none bg-white hover:bg-gray-700 text-gray-900 rounded"
           href="{% url 'contact' %}"
-          >{% trans "Contact us" %}</a
+          >Contact us</a
         >
       </div>
     </div>
