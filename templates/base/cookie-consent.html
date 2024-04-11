@@ -1,0 +1,29 @@
+<div id="cookieConsent" style="display: none;" class="fixed flex items-center justify-center gap-x-4 gap-y-6 flex-wrap bottom-0 z-40 w-full bg-gray-800 p-4 text-center text-white">
+    <span class="text-sm">
+        We use cookies to enhance your experience on {{APP_NAME}}. By continuing to use our site, you agree to our <a href="#" class="underline">Cookie Policy</a>.
+    </span>
+    <button id="acceptButton" class=" bg-primary-500 hover:bg-primary-600 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline">Got it!</button>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const cookieConsent = document.getElementById('cookieConsent');
+        const acceptButton = document.getElementById('acceptButton');
+
+        acceptButton.addEventListener('click', function () {
+            // Set a local storage value to indicate user has accepted the cookie policy
+            localStorage.setItem('cookieConsent', 'true');
+
+            // Hide the cookie consent notification
+            cookieConsent.style.display = 'none';
+        });
+
+        // Check if the user has previously accepted the cookie policy
+        if (localStorage.getItem('cookieConsent') === 'true') {
+            // If yes, hide the cookie consent notification
+            cookieConsent.style.display = 'none';
+        }else{
+            cookieConsent.style.display = 'flex';
+        }
+    });
+</script>
