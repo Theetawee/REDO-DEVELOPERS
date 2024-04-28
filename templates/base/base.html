@@ -18,8 +18,9 @@
     <!-- <script src="{% static 'js/htmx.js' %}"></script> -->
     <script src="{% static 'js/main.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    {%block head%}{%endblock %}
 </head>
-<body class="bg-white text-gray-800" id="html">
+<body class="bg-white overflow-x-hidden text-gray-800" id="html">
     {% include 'base/messages.html' %}
     {% include 'base/nav.html' %}
     

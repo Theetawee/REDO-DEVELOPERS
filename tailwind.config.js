@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require("tailwindcss/plugin");
 
-
 module.exports = {
   darkMode: "class",
 
@@ -10,15 +9,17 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          100: "#fce0d7",
-          200: "#f8c1ae",
-          300: "#f5a286",
-          400: "#f1835d",
-          500: "#ee6435",
-          600: "#be502a",
-          700: "#8f3c20",
-          800: "#5f2815",
-          900: "#30140b",
+          50: "#fef7e0",
+          100: "#fff1c2",
+          200: "#ffe089",
+          300: "#ffc745",
+          400: "#fdad12",
+          500: "#ed9305",
+          600: "#cc6e02",
+          700: "#a34b05",
+          800: "#863c0d",
+          900: "#723111",
+          950: "#431705",
         },
         gray: {
           50: "#f2f2f2",
@@ -32,6 +33,20 @@ module.exports = {
           800: "#333333",
           900: "#1a1a1a",
         },
+        secondary: {
+          '50': '#eff5fe',
+          '100': '#e8f0fd',
+          '200': '#cbdcfa',
+          '300': '#acc4f5',
+          '400': '#8ba3ee',
+          '500': '#6e84e6',
+          '600': '#5361d8',
+          '700': '#444ebe',
+          '800': '#39429a',
+          '900': '#353e7a',
+          '950': '#1f2347',
+      },
+      
       },
     },
   },
@@ -55,4 +70,3 @@ module.exports = {
     }),
   ],
 };
-
