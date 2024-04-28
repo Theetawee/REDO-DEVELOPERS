@@ -1,4 +1,5 @@
-{% extends 'base/base.html' %} {% block content %}
+{% extends 'base/base.html' %} 
+{% block content %}
 
 <section class="py-16 bg-white px-4">
   <div class="max-w-2xl mx-auto text-center">
@@ -6,139 +7,75 @@
       Get started with our {{APP_NAME}} Services
     </h1>
     <div class="my-6">
-      <a
-        class="text-white hover:bg-primary-500/90 text-lg bg-primary-500 py-3 rounded-full px-8"
-        href="/contact"
-        >Contact us</a
-      >
+      <a class="text-white hover:bg-primary-500/90 text-lg bg-primary-500 py-3 rounded-full px-8" href="/contact">Contact us</a>
     </div>
     <div class="py-10">
       <p class="italic">Looking for a specific service or product?</p>
     </div>
   </div>
-  <div class="bg-white">
-    <div class="max-w-screen-lg mx-auto py-10">
-      <div class="flex flex-wrap gap-6 items-center justify-between">
-        <div>
-          <p class="text-xl font-semibold text-white mb-4">
-            Our products and services include:
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-  <div >
-    <h2 >
-      <button
-        type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border hover:bg-white border-b-0 border-gray-200 bg-white rounded-t-xl focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400  gap-3"
-        data-accordion-target="#accordion-open-body-1"
-        aria-expanded="true"
-        aria-controls="accordion-open-body-1">
-        <span class="flex items-center"
-          >
-          Custom Software Development</span
-        >
-        
-      </button>
-    </h2>
-    <div>
-      <div
-        class="p-5 border border-b-0 border-gray-200 bg-white dark:border-gray-200 dark:bg-white">
-        <p class="mb-2 text-gray-700 dark:text-gray-400">
-          At {{APP_NAME}}, we specialize in custom software
-                development tailored to meet your unique business needs. Our
-                team of experienced developers works closely with you to
-                understand your requirements and deliver bespoke solutions that
-                streamline operations, enhance productivity, and drive growth.
-                Whether you need a web-based application, enterprise software,
-                or a mobile app, we have the expertise to turn your ideas into
-                reality. Partner with us for innovative software solutions that
-                propel your business forward.
-        </p>
-        
-      </div>
-    </div>
-    <h2 >
-      <button
-        type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-gray-200 bg-white focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400 hover:bg-white gap-3"
-        <span class="flex items-center"
-          >Web development</span
-        >
-        
-      </button>
-    </h2>
-    <div
-      <div class="p-5 border border-b-0 border-gray-200 bg-white dark:border-gray-200">
-        <p class="mb-2 text-gray-700 dark:text-gray-400">
-          At {{APP_NAME}}, we offer comprehensive web development services to help you establish a strong online presence and achieve your business goals. Our team of skilled developers specializes in creating modern, responsive websites that are visually appealing, user-friendly, and optimized for performance. Whether you need a simple landing page, a corporate website, or a complex e-commerce platform, we have the expertise to bring your vision to life. From initial design concepts to final implementation, we work closely with you to ensure that your website reflects your brand identity and effectively engages your target audience.
-        </p>
-        
-      </div>
-    </div>
-    <h2 >
-      <button
-        type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-gray-200 bg-white focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400 hover:bg-white gap-3"
-        <span class="flex items-center"
-          >
-          Mobile App Development</span
-        >
-        
-      </button>
-    </h2>
-    <div
-      <div class="p-5 border border-t-0 border-gray-200 bg-white dark:border-gray-200">
-        <p class="mb-2 text-gray-700 dark:text-gray-400">
-          At {{APP_NAME}}, we specialize in mobile app development to help you reach your audience on their preferred devices. Our team of skilled developers has expertise in creating native and cross-platform mobile applications that are user-friendly, feature-rich, and performance-optimized. Whether you need a mobile app for iOS, Android, or both platforms, we have the knowledge and experience to turn your ideas into reality. From initial concept to final deployment, we work closely with you to ensure that your mobile app meets your business objectives and exceeds user expectations. Partner with us for innovative mobile solutions that drive engagement and enhance your brand presence.</p>
-        
-      </div>
-    </div>
-    <h2 >
-      <button
-        type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-gray-200 bg-white focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400 hover:bg-white gap-3"
-        <span class="flex items-center"
-          >
-          Software Consulting</span
-        >
-        
-      </button>
-    </h2>
-    <div
-      <div class="p-5 border border-t-0 border-gray-200 bg-white dark:border-gray-200">
-        <p class="mb-2 text-gray-700 dark:text-gray-400">
-          At {{APP_NAME}}, we provide expert software consulting services to help you make informed decisions and achieve your technology goals. Our team of experienced consultants offers strategic guidance and practical insights to address your unique business challenges and opportunities. Whether you need assistance with project planning, technology selection, process optimization, or team training, we're here to help. With a focus on understanding your business objectives and leveraging the latest industry trends and best practices, we empower you to unlock the full potential of your technology investments. Partner with us for personalized consulting solutions that drive innovation and success.
-      </div>
-    </div>
-<h2 >
-      <button
-        type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-gray-200 bg-white focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400 hover:bg-white gap-3"
-        <span class="flex items-center"
-          >
-          Software Renovation and Support</span
-        >
-        
-      </button>
-    </h2>
-    <div
-      <div class="p-5 border border-t-0 border-gray-200 bg-white dark:border-gray-200">
-        <p class="mb-2 text-gray-700 dark:text-gray-400">
-          At {{APP_NAME}}, we offer software renovation and support services to help you optimize and maintain your existing systems for long-term success. Our team of experienced developers specializes in modernizing legacy software applications, enhancing functionality, and improving performance to meet evolving business needs. Whether you need bug fixes, security updates, performance optimizations, or feature enhancements, we're here to support you every step of the way. With our proactive approach and commitment to quality, we ensure that your software remains reliable, secure, and efficient, allowing you to focus on achieving your business objectives.
-      </div>
-    </div>
-
-  </div>
 </section>
+
+<div class="max-w-screen-xl px-4 pb-16 mx-auto">
+  <div>
+    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border hover:bg-white border-b-0 border-gray-200 bg-white rounded-t-xl focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400 gap-3" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
+      <span class="flex items-center">Custom Software Development</span>
+    </button>
+  </div>
+  <div>
+    <div class="p-5 border border-b-0 border-gray-200 bg-white dark:border-gray-200 dark:bg-white">
+      <p class="mb-2 text-gray-700 dark:text-gray-400">
+        At {{APP_NAME}}, we specialize in custom software development tailored to meet your unique business needs. Our team of experienced developers works closely with you to understand your requirements and deliver bespoke solutions that streamline operations, enhance productivity, and drive growth. Whether you need a web-based application, enterprise software, or a mobile app, we have the expertise to turn your ideas into reality. Partner with us for innovative software solutions that propel your business forward.
+      </p>
+    </div>
+  </div>
+  <div>
+    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-gray-200 bg-white focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400 hover:bg-white gap-3">
+      <span class="flex items-center">Web Development</span>
+    </button>
+  </div>
+  <div>
+    <div class="p-5 border border-b-0 border-gray-200 bg-white dark:border-gray-200">
+      <p class="mb-2 text-gray-700 dark:text-gray-400">
+        At {{APP_NAME}}, we offer comprehensive web development services to help you establish a strong online presence and achieve your business goals. Our team of skilled developers specializes in creating modern, responsive websites that are visually appealing, user-friendly, and optimized for performance. Whether you need a simple landing page, a corporate website, or a complex e-commerce platform, we have the expertise to bring your vision to life. From initial design concepts to final implementation, we work closely with you to ensure that your website reflects your brand identity and effectively engages your target audience.
+      </p>
+    </div>
+  </div>
+  <div>
+    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-gray-200 bg-white focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400 hover:bg-white gap-3">
+      <span class="flex items-center">Mobile App Development</span>
+    </button>
+  </div>
+  <div>
+    <div class="p-5 border border-t-0 border-gray-200 bg-white dark:border-gray-200">
+      <p class="mb-2 text-gray-700 dark:text-gray-400">
+        At {{APP_NAME}}, we specialize in mobile app development to help you reach your audience on their preferred devices. Our team of skilled developers has expertise in creating native and cross-platform mobile applications that are user-friendly, feature-rich, and performance-optimized. Whether you need a mobile app for iOS, Android, or both platforms, we have the knowledge and experience to turn your ideas into reality. From initial concept to final deployment, we work closely with you to ensure that your mobile app meets your business objectives and exceeds user expectations. Partner with us for innovative mobile solutions that drive engagement and enhance your brand presence.
+      </p>
+    </div>
+  </div>
+  <div>
+    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-gray-200 bg-white focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400 hover:bg-white gap-3">
+      <span class="flex items-center">Software Consulting</span>
+    </button>
+  </div>
+  <div>
+    <div class="p-5 border border-t-0 border-gray-200 bg-white dark:border-gray-200">
+      <p class="mb-2 text-gray-700 dark:text-gray-400">
+        At {{APP_NAME}}, we provide expert software consulting services to help you make informed decisions and achieve your technology goals. Our team of experienced consultants offers strategic guidance and practical insights to address your unique business challenges and opportunities. Whether you need assistance with project planning, technology selection, process optimization, or team training, we're here to help. With a focus on understanding your business objectives and leveraging the latest industry trends and best practices, we empower you to unlock the full potential of your technology investments. Partner with us for personalized consulting solutions that drive innovation and success.
+      </p>
+    </div>
+  </div>
+  <div>
+    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-gray-200 bg-white focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-200 dark:text-gray-400 hover:bg-white gap-3">
+      <span class="flex items-center">Software Renovation and Support</span>
+    </button>
+  </div>
+  <div>
+    <div class="p-5 border border-t-0 border-gray-200 bg-white dark:border-gray-200">
+      <p class="mb-2 text-gray-700 dark:text-gray-400">
+        At {{APP_NAME}}, we offer software renovation and support services to help you optimize and maintain your existing systems for long-term success. Our team of experienced developers specializes in modernizing legacy software applications, enhancing functionality, and improving performance to meet evolving business needs. Whether you need bug fixes, security updates, performance optimizations, or feature enhancements, we're here to support you every step of the way. With our proactive approach and commitment to quality, we ensure that your software remains reliable, secure, and efficient, allowing you to focus on achieving your business objectives.
+      </p>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
