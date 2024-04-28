@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  -webkit-tap-highlight-color: transparent;
+
+}
+
 .profile_title{
   @apply font-semibold text-gray-300;
 }
