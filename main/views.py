@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import CompanyProfile, Testimony
 from django.templatetags.static import static
 from django.conf import settings
+from django.core.mail import send_mail
 
 
 # Create your views here.
@@ -54,6 +55,13 @@ def company_services(request):
 
 
 def contact_us(request):
+    if request.POST:
+        email = request.POST.get("email")
+        message = request.POST.get("message")
+        subject = request.POST.get("subject")
+
+        send_mail(subject, message, email, [settings.EMAIL_HOST_USER])
+
     title = f"Contact Us | {settings.APP_NAME}"
     description = f"Get in touch with {settings.APP_NAME} for inquiries, partnerships, or any assistance you may need. We're here to help!"
     context = {"title": title, "description": description}
