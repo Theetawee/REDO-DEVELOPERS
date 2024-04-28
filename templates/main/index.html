@@ -1,26 +1,81 @@
-{% extends 'base/base.html' %}
-{% load static %}
-{% block head %}
+{% extends 'base/base.html' %} {% load static %} {% block head %}
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "image": "{% static 'images/512.png' %}",
-      "url": "https://www.redodevelopers.site",
-      "sameAs": ["https://twitter.com/redodevs", "https://www.redodevelopers.site/company/about/","https://www.facebook.com/redodevelopersinc/"],
-      "logo": "{% static 'images/512.png' %}",
-      "name": "{{APP_NAME}}",
-      "description": "Discover a transformative partnership with {{APP_NAME}} We&#x27;re your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape.",
-      "email": "support@redodevelopers.site",
-      "telephone": "+256779730256",
-      "foundingDate": "2021-03-02"
-    }
-    </script>
-  {%endblock %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "image": "{% static 'images/512.png' %}",
+    "url": "https://www.redodevelopers.site",
+    "sameAs": [
+      "https://twitter.com/redodevs",
+      "https://www.redodevelopers.site/company/about/",
+      "https://www.facebook.com/redodevelopersinc/"
+    ],
+    "logo": "{% static 'images/512.png' %}",
+    "name": "{{APP_NAME}}",
+    "description": "Discover a transformative partnership with {{APP_NAME}} We&#x27;re your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape.",
+    "email": "support@redodevelopers.site",
+    "telephone": "+256779730256",
+    "foundingDate": "2021-03-02"
+  }
+</script>
+{%endblock %} {% block content %} {% load i18n %}
 
 
-{% block content %} {% load i18n %}
+
+<div id="controls-carousel" class="relative w-full" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-[80vh] overflow-hidden">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{% static 'images/192.png' %}" class="absolute h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <div class="relative w-full h-full">
+                <img src="{% static 'images/slide1.jpeg' %}" class="absolute inset-0 w-full h-full object-cover" alt="...">
+                <div class="bg-black/30 absolute inset-0 w-full">
+                <div class="absolute inset-0 px-4 justify-center items-end flex max-w-screen-lg mx-auto w-full">
+                    <div class="bg-white shadow rounded-t-xl w-full px-4 py-8">
+                  <h1 class="text-gray-900 text-center text-3xl font-bold">Welcome to {{APP_NAME}}</h1>
+                  </div>
+                </div>
+                </div>
+              </div>
+              
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{% static 'images/192.png' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{% static 'images/192.png' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="{% static 'images/192.png' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 rounded cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
 
 
 {% endblock %}

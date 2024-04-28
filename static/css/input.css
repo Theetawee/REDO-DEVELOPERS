@@ -18,3 +18,37 @@
 .title{
   @apply text-2xl mb-4 text-white;
 }
+
+.carousel{
+  @apply w-full h-screen relative;
+}
+
+.slide{
+  @apply absolute inset-0 opacity-0;
+}
+
+.slide[data-active]{
+  @apply opacity-100;
+}
+
+.slide >div> img{
+  @apply w-full h-full object-cover object-center;
+}
+
+
+
+.carousel__button{
+  @apply absolute  w-8  h-8 hover:bg-black focus:bg-black border-none cursor-pointer bg-black/50 text-white top-1/2 z-20 -translate-y-1/2;
+}
+
+.carousel__track{
+  @apply m-0 p-0 list-none;
+}
+
+.carousel__button--next{
+  @apply right-0;
+}
+
+.carousel__button--prev{  
+  @apply left-0;
+}
