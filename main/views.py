@@ -1,9 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import redirect, render, get_object_or_404
 from .models import CompanyProfile, Testimony
 from django.templatetags.static import static
 from django.conf import settings
 from django.core.mail import send_mail
-
+from django.contrib import messages
 
 # Create your views here.
 def index(request):
@@ -60,7 +60,14 @@ def contact_us(request):
         message = request.POST.get("message")
         subject = request.POST.get("subject")
 
-        send_mail(subject, message, email, [settings.EMAIL_HOST_USER])
+        msg = f"Email from {email}\n {message}"
+        try:
+            send_mail(subject, msg, email, [settings.EMAIL_HOST_USER])
+            messages.success(request, "Email sent successfully")
+            return redirect("contact")
+        except Exception:
+            messages.error(request, "Failed to send email")
+            return redirect("contact")
 
     title = f"Contact Us | {settings.APP_NAME}"
     description = f"Get in touch with {settings.APP_NAME} for inquiries, partnerships, or any assistance you may need. We're here to help!"
