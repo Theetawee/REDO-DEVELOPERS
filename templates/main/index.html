@@ -1,5 +1,4 @@
 {% extends 'base/base.html' %} {% load static %} {% block head %}
-<link rel="stylesheet" href="{% static 'css/animate.css'%}">
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,31 +42,22 @@
     <h2 class="text-center mb-20 sm:text-5xl font-semibold text-3xl">Discover what <span class="px-5 py-2 bg-secondary-50 rounded-full text-secondary-500">RDI</span> can do for you ...</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-20">
         <div class="p-4 py-6 sm:py-10 sm:px-8 rounded-xl bg-secondary-50">
-            <h3 class="text-3xl mb-6 font-semibold">Solutions that drive success</h3>
-            <p class="text-lg mb-6">We specialize in developing software solutions for individuals, startups, and enterprises. Whether you're looking for a simple web app, a mobile application, or enterprise-level software, we're your go-to partner for all your software needs. Our products are built to scale and efficiency, ensuring that your business stays ahead in today's competitive landscape.</p>
-            <span>
-                <a class="text-secondary-500 text-lg font-semibold" href="{% url 'services' %}">Explore our services</a>
-            </span>
+            <h3 class="text-3xl mb-6 font-semibold">Empowering Success with Innovative Solutions</h3>
+            <p class="text-lg mb-6">We specialize in crafting cutting-edge software solutions tailored for individuals, startups, and enterprises. Whether you seek a streamlined web application, a dynamic mobile solution, or robust enterprise software, we are your trusted partner. Our solutions are meticulously designed for scalability and efficiency, ensuring your business thrives amidst today's competitive landscape.</p>
+            <a class="text-secondary-500 text-lg font-semibold" href="{% url 'services' %}">Discover Our Services</a>
         </div>
         <div class="p-4 py-6 sm:py-10 sm:px-8 rounded-xl bg-primary-50">
-            <h3 class="text-3xl mb-6 font-semibold">From RDI</h3>
+            <h3 class="text-3xl mb-6 font-semibold">Welcome to Redo Developers Inc.</h3>
             <p class="text-lg mb-6">
-                Whether you're a business owner or an individual, Redo Developers Inc. is here to support you every step of the way. Exploring the challenges our customers face and how our integrated software solutions empowers you to overcome these obstacles and achieve your goals.
-
-Join the community of forward-thinking individuals and businesses who rely on our cutting-edge software to drive unparalleled success.
-
-Experience the transformative synergy of innovation and excellence with Redo Developers Inc. Our unwavering commitment to delivering top-notch solutions has led to a trail of success stories, setting us apart as leaders in the industry.
+                Whether you're a business owner or an individual, Redo Developers Inc. is here to support you every step of the way. We understand the challenges our customers face and how our integrated software solutions empower you to overcome these obstacles and achieve your goals. Join the community of forward-thinking individuals and businesses who rely on our cutting-edge software to drive unparalleled success.
             </p>
-            <span class="flex items-center gap-2">
-                <a href="{% url 'contact' %}" class="flex items-center gap-2 border border-primary-500 text-primary-500 px-6 py-2.5 text-lg font-medium">Get quote now
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                      </svg>
-                      
-                </a>
-            </span>
+            <a href="{% url 'contact' %}" class="inline-flex items-center gap-2 border border-primary-500 text-primary-500 px-6 py-2.5 text-lg font-medium rounded-md hover:bg-primary-500 hover:text-white transition duration-300">Get a Quote Now
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+            </a>
         </div>
-    </div>
+        
 </section>
 
 <section class="px-4 py-16">
