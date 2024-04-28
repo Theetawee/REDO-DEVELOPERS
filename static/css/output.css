@@ -1608,6 +1608,10 @@ input:checked + .toggle-bg {
   gap: 5rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
@@ -1952,6 +1956,16 @@ input:checked + .toggle-bg {
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
+
+.bg-secondary-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(110 132 230 / var(--tw-bg-opacity));
+}
+
+.bg-secondary-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(83 97 216 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
