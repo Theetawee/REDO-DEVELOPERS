@@ -91,3 +91,10 @@ def investments(request):
         "type": type,
     }
     return render(request, "main/investments.html", context)
+
+
+def carrers_view(request):
+    title = f"Carrers | {settings.APP_NAME}"
+    description = "Join our dynamic team of professionals. We're always looking for talented individuals to join our team. Apply today and let's build a strong and rewarding career together!"
+    context = {"title": title, "description": description}
+    return render(request, "main/carrers.html", context)
