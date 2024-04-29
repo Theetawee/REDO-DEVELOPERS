@@ -1,6 +1,5 @@
 from django.shortcuts import redirect, render, get_object_or_404
 from .models import CompanyProfile, Testimony
-from django.templatetags.static import static
 from django.conf import settings
 from django.core.mail import send_mail
 from django.contrib import messages
