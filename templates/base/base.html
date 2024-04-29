@@ -17,7 +17,12 @@
 {% include 'base/fonts.html' %}
     <!-- <script src="{% static 'js/htmx.js' %}"></script> -->
     <script src="{% static 'js/main.js' %}"></script>
+    {% load compress %}
+    {% compress css inline %}
+
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    {% endcompress %}
+
     {%block head%}{%endblock %}
 </head>
 <body class="bg-white overflow-x-hidden text-gray-800" id="html">

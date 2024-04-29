@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     "cloudinary_storage",
     "cloudinary",
     "maintenance_mode",
+    "django_minify_html",
+    "compressor",
 ]
 
 MIDDLEWARE = [
@@ -50,6 +52,7 @@ MIDDLEWARE = [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django_htmx.middleware.HtmxMiddleware",
     "maintenance_mode.middleware.MaintenanceModeMiddleware",
+    "django_minify_html.middleware.MinifyHtmlMiddleware",
 ]
 
 ROOT_URLCONF = "base.urls"
@@ -124,8 +127,13 @@ EMAIL_USE_TLS = True
 MESSAGE_TAGS = {
     messages.ERROR: "danger",
 }
-
+STATICFILES_FINDERS = (
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "compressor.finders.CompressorFinder",
+)
 
 MAINTENANCE_MODE = os.environ.get("MAINTENANCE_MODE", "False").lower() == "true"
 MAINTENANCE_MODE_TEMPLATE = "base/maintenance.html"
 MAINTENANCE_MODE_IGNORE_ADMIN_SITE = True
+COMPRESS_ENABLED = True
