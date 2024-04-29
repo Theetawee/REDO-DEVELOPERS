@@ -60,7 +60,6 @@ def contact_us(request):
         email = request.POST.get("email")
         message = request.POST.get("message")
         subject = request.POST.get("subject")
-
         msg = f"Email from {email}\n {message}"
         try:
             send_mail(subject, msg, email, [settings.EMAIL_HOST_USER])
