@@ -1,0 +1,6 @@
+#env-variables
+
+SECRET_KEY
+EMAIL_PASSWORD
+settings
+API_SECRET
