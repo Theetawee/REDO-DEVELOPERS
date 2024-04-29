@@ -75,24 +75,6 @@ def contact_us(request):
     return render(request, "main/contact.html", context)
 
 
-def investments(request):
-    brand = "FinGuard"
-    title = (
-        f"Unlock Financial Freedom: Navigate the Market Maze with Confidence | {brand}"
-    )
-    image = static("images/invest.png")
-    type = "article"
-    description = f"Discover the path to financial security with {brand}. Our expertly managed investment platform offers a roadmap through the market maze, ensuring consistent growth and stability. Join us today and seize control of your financial future!"
-    context = {
-        "brand": brand,
-        "title": title,
-        "description": description,
-        "image": image,
-        "type": type,
-    }
-    return render(request, "main/investments.html", context)
-
-
 def carrers_view(request):
     title = f"Carrers | {settings.APP_NAME}"
     description = "Join our dynamic team of professionals. We're always looking for talented individuals to join our team. Apply today and let's build a strong and rewarding career together!"
