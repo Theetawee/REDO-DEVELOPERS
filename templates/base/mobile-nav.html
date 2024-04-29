@@ -1,51 +1,74 @@
 {% load static %}
-  <nav class="flex border-b border-gray-100 shadow-sm items-center p-4 justify-between">
-    <a aria-label="Home page" title="Home" href="{% url 'home' %}">
-      <img
-        src="{% static 'images/logo.svg' %}"
-        class="w-10 h-10"
-        alt="{{APP_NAME}} Logo" />
-    </a>
-    <div class="flex items-center justify-center">
-      <button class="flex items-center justify-center" onclick="openMenu()" id="nav-btn">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
-    </div>
-  </nav>
+<nav
+  class="flex border-b border-gray-100 shadow-sm items-center p-4 justify-between">
+  <a aria-label="Home page" title="Home" href="{% url 'home' %}">
+    <img
+      src="{% static 'images/logo.svg' %}"
+      class="w-10 h-10"
+      alt="{{APP_NAME}} Logo" />
+  </a>
+  <div class="flex items-center justify-center">
+    <button
+      class="flex items-center justify-center"
+      onclick="openMenu()"
+      id="nav-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+  </div>
+</nav>
 
-<div id="nav-menu" style="display: none;" onclick="closeMenu()"  class="fixed h-screen top-0 bottom-0 w-full bg-black/50 z-20">
-  <div style="transform:translateX(-100%);" onclick="event.stopPropagation()" id="inner-menu" class="fixed h-screen border-r border-gray-300 top-0 bottom-0 w-[80%] z-40 bg-white">
+<div
+  id="nav-menu"
+  style="display: none"
+  onclick="closeMenu()"
+  class="fixed h-screen top-0 bottom-0 w-full bg-black/50 z-20">
+  <div
+    style="transform: translateX(-100%)"
+    onclick="event.stopPropagation()"
+    id="inner-menu"
+    class="fixed h-screen border-r border-gray-300 top-0 bottom-0 w-[80%] z-40 bg-white">
     <div class="py-20 px-4">
-    <a href="{% url 'home' %}" class="sm-link">Home</a>
-    </div>  
+      <div class="grid grid-cols-1 space-y-6 pl-6">
+        <div>{% include 'base/link.html' with path='home' label='Home' %}</div>
+        <div>
+          {% include 'base/link.html' with path='services' label='Services' %}
+        </div>
+        <div>
+          {% include 'base/link.html' with path='about' label='Company Overview '%}
+        </div>
+        <div>
+          {% include 'base/link.html' with path='profiles' label='Our Team' %}
+        </div>
+        <div>
+          {% include 'base/link.html' with path='carrers' label='Carrers' %}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <script>
-    const navBtn=document.getElementById('nav-btn');
-    const navMenu=document.getElementById('nav-menu');
-    const innerMenu=document.getElementById('inner-menu');
+  const navBtn = document.getElementById("nav-btn");
+  const navMenu = document.getElementById("nav-menu");
+  const innerMenu = document.getElementById("inner-menu");
 
-    const openMenu = () => {
-        navMenu.style.display = 'block';
-        innerMenu.style.transform = 'translateX(0)';
-        
-      }
-    
-      const closeMenu = () => {
-        navMenu.style.display = 'none';
-        innerMenu.style.transform = 'translateX(-100%)';
-        
-      }
+  const openMenu = () => {
+    navMenu.style.display = "block";
+    innerMenu.style.transform = "translateX(0)";
+  };
 
+  const closeMenu = () => {
+    navMenu.style.display = "none";
+    innerMenu.style.transform = "translateX(-100%)";
+  };
 </script>
