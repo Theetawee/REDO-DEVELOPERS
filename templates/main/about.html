@@ -74,13 +74,12 @@
 {% block content %}  
 {% load i18n %}
 
-<section class="bg-gray-white py-8">
+<section class="bg-gray-white pt-8 pb-16">
   <div
-    class="grid gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-    <div></div>
+    class="py-8 px-4 mx-auto max-w-screen-lg">
     <div class="mt-4 px-4 pt-4 md:mt-0">
-      <ul class="relative text-gray-500 border-l border-gray-200">
-        <li class="mb-10 ml-6">
+      <ul class="relative text-gray-500 border-l-2 border-gray-200 py-8">
+        <li class="mb-10 ml-8">
           <span
             class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -left-4 ring-4 ring-gray-200 text-gray-500"
             ><svg
@@ -100,9 +99,9 @@
             From our inception in 2021, we set out with a common vision and a burst of inspiration. Our mission is to reshape the digital landscape by providing innovative software solutions, with a strong emphasis on AI (Artificial Intelligence) technologies.
             </p>
         </li>
-        <li class="mb-10 ml-6">
+        <li class="mb-10 ml-8">
           <span
-            class="absolute flex items-center justify-center w-8 h-8 bg-yellow-400 rounded-full -left-4 ring-4 ring-gray-200 text-gray-900"
+            class="absolute flex items-center justify-center w-8 h-8 bg-yellow-400 rounded-full -left-4 ring-4 ring-gray-200 text-gray-600"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -124,9 +123,9 @@
             As we advanced, we faced challenges in various industries. Our dedicated team embraced these challenges as opportunities to transform businesses, harnessing the potential of AI to create innovative solutions.
            </p>
         </li>
-        <li class="mb-10 ml-6">
+        <li class="mb-10 ml-8">
           <span
-            class="absolute flex items-center justify-center w-8 h-8 bg-rose-400 rounded-full -left-4 ring-4 ring-gray-200 text-gray-900"
+            class="absolute flex items-center justify-center w-8 h-8 bg-rose-400 rounded-full -left-4 ring-4 ring-gray-200 text-gray-600"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -144,9 +143,9 @@
             Our journey led us to develop groundbreaking solutions that address real-world problems. We designed collaborative tools, streamlined workflows, and enhanced user experiences to push the boundaries of innovation, driven by the power of AI technologies
             </p>
         </li>
-        <li class="ml-6">
+        <li class="ml-8">
           <span
-            class="absolute flex items-center justify-center w-8 h-8 bg-orange-400 rounded-full -left-4 ring-4 ring-gray-200 text-gray-900"
+            class="absolute flex items-center justify-center w-8 h-8 bg-orange-400 rounded-full -left-4 ring-4 ring-gray-200 text-gray-600"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -169,10 +168,10 @@
     </div>
   </div>
 </section>
-<hr class="h-px bg-gray-800 border-0" />
+<hr class="h-px bg-gray-100 border-0" />
 <section class="py-8 px-4 md:px-8">
   <div class="mb-10">
-    <h1 class="text-4xl font-bold mb-10 tracking-tight text-gray-900">
+    <h1 class="text-4xl text-center mb-10 tracking-tight text-gray-800">
       Embark on a Journey with {{APP_NAME}}
     </h1>
     <p class="leading-relaxed text-gray-700">
@@ -186,12 +185,12 @@
       transcending industries with adaptable solutions.
     </p>
   </div>
-  <div class="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
+  <div class="flex flex-col items-center gap-x-6 md:flex-row justify-between space-y-6 md:space-y-0">
     <div class="md:w-1/2">
-      <p class="mb-4 leading-relaxed text-gray-700">
+      <p class="mb-4 text-lg leading-relaxed text-gray-700">
         Redo Developers Inc. is a fusion of logic and aesthetics, a symphony of engineers, designers, and strategists harmonizing to shatter boundaries. We craft innovative software that paints the horizons of tomorrow with vivid possibilities.        
       </p>
-      <p class="leading-relaxed text-gray-700">
+      <p class="leading-relaxed text-lg text-gray-700">
         Our mission is guided by core values: Innovation, Excellence,
         Collaboration, and Growth. We aim to empower businesses and individuals
         by offering cutting-edge software, envisioning a future where technology
@@ -202,11 +201,11 @@
       <img
         src="{% static 'images/hero.webp' %}"
         alt="Redo Developers"
-        class="w-full h-72 object-cover rounded-md" />
+        class="w-96 mx-auto h-96 rounded-full object-cover" />
     </div>
   </div>
   <div class="my-16">
-    <h2 class="text-3xl font-bold text-gray-900 mb-6">
+    <h2 class="text-3xl text-gray-700 mb-6">
       Our Impact and Journey Through Time
     </h2>
     <p class="mb-4 leading-relaxed text-gray-700">
@@ -228,7 +227,7 @@
     </p>
   </div>
   <div>
-    <h2 class="text-3xl font-bold text-gray-900 mb-6">
+    <h2 class="text-3xl text-center text-gray-700 mb-6">
       Vision, Commitment to Quality, and Social Responsibility
     </h2>
     <p class="mb-4 leading-relaxed text-gray-700">

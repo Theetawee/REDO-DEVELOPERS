@@ -9,10 +9,10 @@
 }
 
 .profile_title{
-  @apply font-semibold text-gray-300;
+  @apply font-semibold text-gray-900;
 }
 .profile_detail{
-  @apply text-white;
+  @apply text-gray-700;
 }
 
 .title{
