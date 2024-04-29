@@ -137,3 +137,4 @@ MAINTENANCE_MODE = os.environ.get("MAINTENANCE_MODE", "False").lower() == "true"
 MAINTENANCE_MODE_TEMPLATE = "base/maintenance.html"
 MAINTENANCE_MODE_IGNORE_ADMIN_SITE = True
 COMPRESS_ENABLED = True
+COMPRESS_ROOT = os.path.join(BASE_DIR, "static")
