@@ -22,10 +22,7 @@
 
 <section>
   <div class="h-72 relative flex justify-center items-center">
-    <img
-      src="{% static 'images/bg.webp' %}"
-      class="w-full h-full object-cover"
-      alt="" />
+    {% include 'partials/bgImage.html'%}
     <div
       class="absolute bottom-1/2 flex w-full items-center justify-center px-4 left-1/2 transform -translate-x-1/2 translate-y-64">
       <div
@@ -76,10 +73,10 @@
     </div>
     <div class="p-4 py-6 sm:py-10 sm:px-8 rounded-xl bg-primary-50">
       <h3 class="text-3xl mb-6 font-semibold">
-        Welcome to Redo Developers Inc.
+        Welcome to {{APP_NAME}}
       </h3>
       <p class="text-lg mb-6">
-        Whether you're a business owner or an individual, Redo Developers Inc.
+        Whether you're a business owner or an individual, {{APP_NAME}}
         is here to support you every step of the way. We understand the
         challenges our customers face and how our integrated software solutions
         empower you to overcome these obstacles and achieve your goals. Join the
