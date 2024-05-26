@@ -1,4 +1,18 @@
 {% extends 'base/base.html' %} {% load i18n %} {% load static %} 
+{% block head %}
+
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld8E8opAAAAALZ0uW5oCgiUBcbVO_s-_OSDjxER"></script>
+  <!-- Your code -->
+  <script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6Ld8E8opAAAAALZ0uW5oCgiUBcbVO_s-_OSDjxER', {action: 'LOGIN'});
+      });
+    }
+  </script>
+
+  {% endblock %}
 {% block content %}
 
 <section class="px-4 bg-white py-16">
@@ -117,7 +131,10 @@
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
                     <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-200 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                 </div>
-                <button id="submit-btn" type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded bg-primary-500 sm:w-fit hover:bg-primary-500/80 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+
+                <button id="submit-btn" data-sitekey="reCAPTCHA_site_key" 
+                data-callback='onSubmit' 
+                data-action='submit' type="submit" class="py-3 g-recaptcha px-5 text-sm font-medium text-center text-white rounded bg-primary-500 sm:w-fit hover:bg-primary-500/80 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
             </form>
         
 
@@ -132,13 +149,13 @@
 </section>
 
 
-<script>
+<!-- <script>
   const form=document.getElementById('form')
   const btn=document.getElementById('submit-btn')
   form.addEventListener('submit', (e) => {
     btn.innerHTML="Sending..."
     btn.classList.add('cursor-not-allowed', 'opacity-50')
   })
-</script>
+</script> -->
 
 {% endblock %}
