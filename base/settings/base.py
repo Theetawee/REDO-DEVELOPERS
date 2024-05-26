@@ -139,3 +139,11 @@ MAINTENANCE_MODE_TEMPLATE = "base/maintenance.html"
 MAINTENANCE_MODE_IGNORE_ADMIN_SITE = True
 COMPRESS_ENABLED = True
 COMPRESS_ROOT = os.path.join(BASE_DIR, "static")
+
+
+DISTILL_SKIP_STATICFILES_DIRS = [
+    ".git",
+    "admin",
+    "cloudinary",
+    "debug_toolbar",
+]
