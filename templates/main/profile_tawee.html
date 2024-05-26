@@ -125,7 +125,7 @@
               </div>
             </div>
             <div class="grid grid-cols-1 gap-2 px-4 py-6 text-gray-100">
-              <p class="text-2xl font-semibold text-white">
+              <p class="text-2xl font-semibold text-gray-800">
                 Professional Information
               </p>
               <div class="border-t pt-5 border-gray-100">
@@ -160,7 +160,14 @@
           </div>
         </div>
         <div class="text-gray-800">
-            <h1 class="text-3xl mb-4">Khaotungkulmethee Pattawee Drake</h1>
+            <h1 class="text-3xl uppercase font-semibold mb-1">Khaotungkulmethee Pattawee Drake</h1>
+            <div class="flex gap-x-2 mb-8 items-center">
+            {% for role in roles %}
+            <div class="flex items-center justify-center shadow rounded-full bg-primary-50/60 px-2  border border-primary-600">
+            <p class="text-xs font-medium flex items-center justify-center text-primary-700 lowercase">{{role}}</p>
+            </div> 
+            {% endfor %}
+            </div> 
             <p class="mb-4">
               <span class="text-xl text-gray-900 font-semibold"
                 >Khaotungkulmethee Pattawee Drake </span

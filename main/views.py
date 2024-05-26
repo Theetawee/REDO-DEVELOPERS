@@ -43,7 +43,12 @@ def profile_detail(request, slug):
     title = f"As a {role_names}, Learn more about {profile.name}'s Life, roles and contributions at {settings.APP_NAME}"
 
     description = f"{profile.name},"
-    context = {"profile": profile, "title": title, "description": description}
+    context = {
+        "profile": profile,
+        "title": title,
+        "description": description,
+        "roles": roles,
+    }
     return render(request, f"main/{profile.template_name}.html", context)
 
 
