@@ -156,3 +156,4 @@ media/
 media_cdn/
 static_cdn/
 backups/
+public/**

@@ -1,11 +1,12 @@
 from django.contrib import admin
-from django.urls import path, include, re_path
+from django.urls import include, path, re_path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.sitemaps.views import sitemap
 from base.sitemaps import StaticViewSitemap
 from django.views.generic.base import TemplateView
 from base.utils import service_worker, manifest, offline
+
 # from django.conf.urls.i18n import i18n_patterns
 
 sitemaps = {"others": StaticViewSitemap}
@@ -20,6 +21,7 @@ urlpatterns = [
         TemplateView.as_view(
             template_name="base/robots.txt", content_type="text/plain"
         ),
+        name="robots",
     ),
     path("", include("main.urls")),
     path("accounts/", include("accounts.urls")),

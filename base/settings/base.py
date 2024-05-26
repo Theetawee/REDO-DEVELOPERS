@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "maintenance_mode",
     "django_minify_html",
     "compressor",
+    "django_distill",
 ]
 
 MIDDLEWARE = [
