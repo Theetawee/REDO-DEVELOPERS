@@ -18,53 +18,63 @@
     "foundingDate": "2021-03-02"
   }
 </script>
+
+<style>
+  .bg_img {
+    background-image: linear-gradient(to bottom, rgba(25, 109, 148, 0.644), rgba(0, 0, 0, 0.13)), url("{% static 'images/main.jpg' %}");
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+
+
 {%endblock %} {% block content %} {% load i18n %}
 
 <section>
-  <div class="h-72 relative flex justify-center items-center">
-    {% include 'partials/bgImage.html'%}
-    <div
-      class="absolute bottom-1/2 flex w-full items-center justify-center px-4 left-1/2 transform -translate-x-1/2 translate-y-64">
+  <div class="relative flex justify-center items-center">
+    <div class="bg_img h-screen  w-full">
+<div class="h-full w-full bg-gradient-to-tr from-sky-50/20 via-cyan-100/20 to-cyan-600/50 py-20 flex items-start justify-start md:px-10">
       <div
-        class="bg-white/30 backdrop-blur-2xl border border-gray-100/50 shadow max-w-screen-md mx-auto rounded-2xl px-4 py-10 w-full">
+      class="flex flex-col items-center justify-center px-4">
+      <div
+        class="bg-white border border-gray-100/50 shadow-md max-w-lg mx-auto  px-4 md:px-10 py-10 w-full">
         <h1
-          class="text-4xl sm:text-5xl text-white uppercase font-medium mb-4 text-center">
+          class="text-4xl  text-gray-800 uppercase font-medium mb-4">
           {{APP_NAME}}
         </h1>
-        <p class="text-center">
-          — Empowering Your Vision with Innovative Software Solutions
+        <p class="text-gray-600 mb-2">
+          The future of growth is here: Explore innovative software to fuel your success 
         </p>
-        <div class="flex mt-4 items-center justify-center">
-          <a
-            href="{% url 'contact' %}"
-            class="border hover:bg-primary-100/50 rounded-md border-primary-300 text-gray-700 px-6 py-2 text-lg font-medium">
-            Let's talk
-          </a>
+        <p class="font-bold">
+          Evolve. Empower. Ascend.
+        </p>
+        <div class="mt-8">
+          <button class="py-3 px-8 bg-primary-700 text-white hover:bg-primary-800">Our Products</button>
         </div>
+        
       </div>
+      </div>
+      
+</div>
+
     </div>
+    
   </div>
 </section>
-<section class="py-28 max-w-screen-xl mx-auto mt-20 px-4">
+<section class="py-10 max-w-screen-xl mx-auto mt-20 px-4">
   <h2 class="text-center mb-20 sm:text-5xl font-semibold text-3xl">
-    Discover what
-    <span class="px-5 py-2 bg-secondary-50 rounded-full text-secondary-500"
-      >RDI</span
-    >
-    can do for you ...
+    Solving Real-World Challenges with Secure Software Solutions
   </h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+  <div class="grid grid-cols-1">
     <div class="p-4 py-6 sm:py-10 sm:px-8 rounded-xl bg-secondary-50">
       <h3 class="text-3xl mb-6 font-semibold">
-        Empowering Success with Innovative Solutions
-      </h3>
+        Innovative. Accessible. Secure.
+            </h3>
       <p class="text-lg mb-6">
-        We specialize in crafting cutting-edge software solutions tailored for
-        individuals, startups, and enterprises. Whether you seek a streamlined
-        web application, a dynamic mobile solution, or robust enterprise
-        software, we are your trusted partner. Our solutions are meticulously
-        designed for scalability and efficiency, ensuring your business thrives
-        amidst today's competitive landscape.
+        At {{APP_NAME}}, we craft innovative software solutions you can rely on. We understand the diverse needs of both individuals and large organizations across various sectors, including finance and social services.</p>
+        <p class="text-lg mb-6">
+
+Our mission is to ensure our software is not only powerful and secure but also accessible to everyone. We achieve this by focusing on intuitive interfaces and user-friendly features, empowering everyone to achieve their goals efficiently and securely.
       </p>
       <a
         class="text-secondary-500 text-lg font-semibold"
@@ -73,48 +83,18 @@
       >
     </div>
 
-    <div class="p-4 py-6 sm:py-10 sm:px-8 rounded-xl bg-primary-50">
-      <h3 class="text-3xl mb-6 font-semibold">Welcome to {{APP_NAME}}</h3>
-      <p class="text-lg mb-6">
-        Whether you're a business owner or an individual, {{APP_NAME}} is here
-        to support you every step of the way. We understand the challenges our
-        customers face and how our integrated software solutions empower you to
-        overcome these obstacles and achieve your goals. Join the community of
-        forward-thinking individuals and businesses who rely on our cutting-edge
-        software to drive unparalleled success.
-      </p>
-      <a
-        href="{% url 'contact' %}"
-        class="inline-flex items-center gap-2 border border-primary-500 text-primary-500 px-6 py-2.5 text-lg font-medium rounded-md hover:bg-primary-500 hover:text-white transition duration-300"
-        >Get a Quote Now
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-        </svg>
-      </a>
-    </div>
+    
   </div>
 </section>
 
 <section class="py-10 px-4">
   <h3 class="text-center text-xl text-primary-600 font-semibold">
-    Work with Us
+    Empowered...
   </h3>
   <h2 class="text-center text-3xl mb-4 font-semibold">Technology We Serve</h2>
   <div class="max-w-xl mx-auto text-center">
     <p>
-      {{APP_NAME}} is dedicated to delivering top-notch technology solutions
-      that meet the diverse needs of our clients. Our expertise spans across
-      various platforms and technologies, ensuring that we can provide
-      comprehensive services tailored to your specific requirements.
+      Everywhere You Need It. Powerful software for any platform: Web, iOS, or Android. Our flexible solutions ensure seamless user experiences across all devices.  The future is multi-platform.  Let's build it together!
     </p>
   </div>
   <div
@@ -242,31 +222,6 @@
   </div>
 </section>
 
-<section class="px-4 py-16">
-  <div class="py-20 relative">
-    <div
-      class="border-t-4 border-primary-400 absolute left-0 top-0 border-l-4 h-20 w-20"></div>
-
-    <div class="flex items-center justify-center">
-      <div class="grid sm:grid-cols-3 grid-cols-1 gap-10">
-        <div class="flex flex-col items-center justify-center">
-          <p class="text-3xl sm:text-5xl font-bold">100+</p>
-          <p class="text-gray-700 font-semibold text-lg">Projects</p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <p class="text-3xl sm:text-5xl font-bold">4+</p>
-          <p class="text-gray-700 font-semibold text-lg">Years of Experience</p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <p class="text-3xl sm:text-5xl font-bold">50+</p>
-          <p class="text-gray-700 font-semibold text-lg">Happy Clients</p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="border-b-4 absolute border-primary-400 bottom-0 right-0 ml-auto border-r-4 h-20 w-20"></div>
-  </div>
-</section>
 
 <section class="px-4 py-16">
   <div

@@ -1,6 +1,6 @@
 {% load static %}
 <nav class="bg-white p-4 border-b border-gray-100 shadow-sm">
-  <div class="max-w-screen-xl gap-4 flex items-center justify-between mx-auto">
+  <div class="max-w-screen-lg gap-4 flex items-center justify-between mx-auto">
     <a href="{% url 'home' %}">
       <img
         src="{% static 'images/logo.svg' %}"
@@ -9,7 +9,6 @@
     </a>
 
     <div class="flex items-center gap-x-10 justify-center">
-      {% include 'base/link.html' with path='home' label='Home' %} 
       {% include 'base/link.html' with path='services' label='Services' %}
 
       <div class="w-full">
@@ -41,10 +40,15 @@
           class="z-40 hidden border border-gray-100 bg-white divide-y p-4 divide-gray-100 rounded shadow max-w-sm w-full dark:bg-gray-700">
           <div class="grid-cols-2 grid gap-4">
             <div>
-              {% include 'base/link.html' with path='about' label='Company Overview' %}
+              {% include 'base/link.html' with path='about' label='Company
+              Overview' %}
             </div>
             <div>
-              {% include 'base/link.html' with path='profiles' label='Our Team'%}
+              {% include 'base/link.html' with path='profiles' label='Our
+              Team'%}
+            </div>
+            <div>
+              {% include 'base/link.html' with path='carrers' label='Carrers' %}
             </div>
             <div>
               {% include 'base/link.html' with path='carrers' label='Carrers' %}
@@ -56,12 +60,20 @@
       {% include 'base/link.html' with path='contact' label='Contact' %}
     </div>
     <div>
-      <a
-        aria-label="Call us"
-        title="Call us"
-        href="tel:+256779730256"
-        class="flex text-sm py-2 px-4 text-primary-800 items-center">
-        <span class="md:flex hidden ml-2">+256 779 730 256</span>
+      <a href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-7 h-7 text-gray-400"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M18 20a6 6 0 0 0-12 0" />
+          <circle cx="12" cy="10" r="4" />
+          <circle cx="12" cy="12" r="10" />
+        </svg>
       </a>
     </div>
   </div>

@@ -147,3 +147,4 @@ DISTILL_SKIP_STATICFILES_DIRS = [
     "cloudinary",
     "debug_toolbar",
 ]
+DISTILL_DIR = "D:/REDODEVS/PUBLIC/files"
