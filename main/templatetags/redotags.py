@@ -1,6 +1,5 @@
 from django import template
-from django.utils.translation import get_language, get_language_info
-from django.conf import settings
+from django import urls
 
 register = template.Library()
 
@@ -31,19 +30,12 @@ def is_input(field):
 # custom_tags.py
 
 
-register = template.Library()
+@register.simple_tag(takes_context=True)
+def translate_url(context, language) -> str:
+    """Get the absolute URL of the current page for the specified language.
 
-
-@register.simple_tag
-def hreflang_tags():
-    language_info = {
-        lang_code: get_language_info(lang_code) for lang_code, _ in settings.LANGUAGES
-    }
-    current_language = get_language()
-    hreflang_tags = ""
-
-    for lang_code, lang_info in language_info.items():
-        if lang_code != current_language:
-            hreflang_tags += f'<link rel="alternate" hreflang="{lang_code}" href="{lang_info["code"]}" />\n'
-
-    return hreflang_tags
+    Usage:
+        {% translate_url 'en' %}
+    """
+    url = context["request"].build_absolute_uri()
+    return urls.translate_url(url, language)

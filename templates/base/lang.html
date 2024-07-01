@@ -1,8 +1,8 @@
 {% load static %}
-
+{% load i18n %}
 <button onclick="openLanguageModal()" class="flex items-center">
-    <img src="{% static 'images/' %}{{ LANGUAGE_CODE }}.svg" alt="{{LANGUAGE_CODE}}" class="w-5 h-5 object-cover rounded-full">
-    <p class="ml-1 text-xs">{{LANGUAGE_CODE}}</p>
+    <img src="{% static 'images/' %}{{ LANGUAGE_CODE }}.svg" alt="{{LANGUAGE_CODE|language_name}}" class="w-5 h-5 object-cover rounded-full">
+    <p class="ml-1 text-xs">{{LANGUAGE_CODE|language_name_translated}}</p>
 </button>
 
 <div id="languageModal" style="display: none;" class="fixed top-0 p-4 items-center justify-center left-0 w-full h-screen z-40 bg-white/30 backdrop-blur-3xl">
@@ -16,7 +16,7 @@
                     <input type="radio" id="{{ language_code }}Checkbox" name="language" value="{{ language_code }}" {% if language_code == request.LANGUAGE_CODE %} checked {% endif %} class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-0 dark:bg-gray-700 dark:border-gray-600">
                     <label for="{{ language_code }}Checkbox" class="ml-2 flex items-center">
                         <img src="{% static 'images/' %}{{ language_code }}.svg" alt="{{ language_name }}" class="w-5 h-5 object-cover rounded-full">
-                        <span class="ml-1 text-base">{{ language_name }}</span>
+                        <span class="ml-1 text-base">{{ language_code|language_name_translated }}</span>
                     </label>
                 </div>
                 {% endfor %}

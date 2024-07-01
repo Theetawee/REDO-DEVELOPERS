@@ -1,11 +1,28 @@
-{% load static %}
-
+{% load i18n static redotags %}
 <!DOCTYPE html>
-<html itemscope itemtype="https://schema.org/WebPage" dir="ltr" lang="en" style="color-scheme: light;" prefix="og: http://ogp.me/ns#">
+<html itemscope itemtype="https://schema.org/WebPage" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}" lang="{{ LANGUAGE_CODE }}" style="color-scheme: light;" prefix="og: http://ogp.me/ns#">
 <head>
     <meta name="google-site-verification" content="heRVHD14ljX8mQjsjZeVW6SOGMZXI6bQPZIsfrPjk1Q" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+    {% get_available_languages as LANGUAGES %}
+    {% for language_code, language_name in LANGUAGES %}
+    <link
+        rel="alternate"
+        hreflang="{{ language_code }}"
+        href="{% translate_url language_code %}" />
+    {% endfor %}
+    <link
+        rel="alternate"
+        hreflang="x-default"
+        href="{% translate_url en  %}" />
+
+
+
+
     <link rel="dns-prefetch" href="https://files.redodevelopers.site" />
     <link rel="preconnect" href="https://files.redodevelopers.site" />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
