@@ -1,0 +1,51 @@
+# FRENCH TRANSLATIONS.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-01 15:17+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Français <fr@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\base\footer.html:7
+msgid "About us"
+msgstr "À propos de nous"
+
+#: .\base\footer.html:12
+msgid "Profiles"
+msgstr "Profils"
+
+#: .\base\footer.html:17
+msgid "Contact us"
+msgstr "Contactez-nous"
+
+#: .\base\footer.html:22
+msgid "Services"
+msgstr "Services"
+
+#: .\base\footer.html:42
+msgid "copyright"
+msgstr "droit d'auteur"
+
+#: .\base\maintenance.html:4
+msgid "Site Under Maintenance"
+msgstr "Site en maintenance"
+
+#: .\base\maintenance.html:5
+msgid "Our website is currently undergoing scheduled maintenance."
+msgstr "Notre site web est actuellement en cours de maintenance programmée."
+
+#: .\base\maintenance.html:6
+msgid "For urgent assistance, please contact us at"
+msgstr "Pour une assistance urgente, veuillez nous contacter à"

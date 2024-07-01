@@ -1,6 +1,8 @@
 from pathlib import Path
 import os
 from django.contrib.messages import constants as messages
+from django.utils.translation import gettext_lazy as _
+
 
 """
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
@@ -11,7 +13,7 @@ python -c 'from django.core.management.utils import get_random_secret_key; print
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-APP_NAME = "Redo Developers Inc."
+APP_NAME = _("Redo Developers Inc.")
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
@@ -101,13 +103,15 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = "en"
 
 LANGUAGES = [
-    ("en", "English"),
-    ("sw", "Swahili"),
-    ("fr", "French"),
+    ("en", _("English")),
+    ("sw", _("Swahili")),
+    ("fr", _("French")),
 ]
 
 LOCALE_PATHS = [
-    os.path.join(BASE_DIR, "locale"),
+    os.path.join(BASE_DIR, "main/locale"),
+    os.path.join(BASE_DIR, "accounts/locale"),
+    os.path.join(BASE_DIR, "templates/locale"),
 ]
 
 
@@ -138,7 +142,7 @@ STATICFILES_FINDERS = (
 
 MAINTENANCE_MODE = os.environ.get("MAINTENANCE_MODE", "False").lower() == "true"
 MAINTENANCE_MODE_TEMPLATE = "base/maintenance.html"
-MAINTENANCE_MODE_IGNORE_ADMIN_SITE = True
+MAINTENANCE_MODE_IGNORE_ADMIN_SITE = False
 COMPRESS_ENABLED = True
 COMPRESS_ROOT = os.path.join(BASE_DIR, "static")
 
