@@ -45,6 +45,24 @@ class Testimony(models.Model):
         return f"{self.name}"
 
 
+class IPGeolocation(models.Model):
+    ip = models.CharField(max_length=45)
+    city = models.CharField(max_length=100)
+    country = models.CharField(max_length=100)
+    country_code = models.CharField(max_length=10)
+    latitude = models.DecimalField(max_digits=9, decimal_places=6)
+    longitude = models.DecimalField(max_digits=9, decimal_places=6)
+    timezone = models.CharField(max_length=100)
+    blocked = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.ip
+
+    class Meta:
+        verbose_name = "IP Geolocation"
+        verbose_name_plural = "IP Geolocations"
+
+
 @receiver(post_save, sender=CompanyProfile)
 def create_slug(sender, instance, created, *args, **kwargs):
     if created:

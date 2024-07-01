@@ -1,6 +1,6 @@
 {% load static %}
 <nav class="bg-white p-4 border-b border-gray-100 shadow-sm">
-  <div class="max-w-screen-lg gap-4 flex items-center justify-between mx-auto">
+  <div class="max-w-screen-2xl gap-4 flex items-center justify-between mx-auto">
     <a href="{% url 'home' %}">
       <img
         src="{% static 'images/logo.svg' %}"
@@ -8,10 +8,16 @@
         alt="{{APP_NAME}} Logo" />
     </a>
 
-    <div class="flex items-center gap-x-10 justify-center">
-      {% include 'base/link.html' with path='services' label='Services' %}
+    <div class="flex items-center gap-x-6 justify-center">
+      <a
+        class="text-gray-900 text-base hover:text-gray-500"
+        title="Solutions and Services"
+        aria-label="Solutions and Services"
+        href="{% url 'services' %}"
+        >Solutions and Services
+      </a>
 
-      <div class="w-full">
+      <div class="">
         <button
           id="dropdownHoverButton"
           data-dropdown-toggle="dropdownHover"
@@ -40,26 +46,55 @@
           class="z-40 hidden border border-gray-100 bg-white divide-y p-4 divide-gray-100 rounded shadow max-w-sm w-full dark:bg-gray-700">
           <div class="grid-cols-2 grid gap-4">
             <div>
-              {% include 'base/link.html' with path='about' label='Company
-              Overview' %}
+              <a
+                class="text-gray-900 text-base hover:text-gray-500"
+                title="About us"
+                aria-label="About us"
+                href="{% url 'about' %}"
+                >About us
+              </a>
             </div>
             <div>
-              {% include 'base/link.html' with path='profiles' label='Our
-              Team'%}
+              <a
+                class="text-gray-900 text-base hover:text-gray-500"
+                title="Company leadership"
+                aria-label="Company leadership"
+                href="{% url 'leadership' %}"
+                >Company leadership
+              </a>
             </div>
             <div>
-              {% include 'base/link.html' with path='carrers' label='Carrers' %}
+              <a
+                class="text-gray-900 text-base hover:text-gray-500"
+                title="Carrers"
+                aria-label="Carrers"
+                href="{% url 'carrers' %}"
+                >Carrers
+              </a>
             </div>
             <div>
-              {% include 'base/link.html' with path='carrers' label='Carrers' %}
+              <a
+                class="text-gray-900 text-base hover:text-gray-500"
+                title="For investors"
+                aria-label="For investors"
+                href="{% url 'home' %}"
+                >For investors
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      {% include 'base/link.html' with path='contact' label='Contact' %}
+      <a
+        onclick="closeMenu()"
+        class="text-gray-900 text-base hover:text-gray-500"
+        title="Customer support"
+        aria-label="Customer support"
+        href="{% url 'home' %}"
+        >Customer support
+      </a>
     </div>
-    <div>
+    <div class="flex items-center justify-between">
       <a href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -75,6 +110,9 @@
           <circle cx="12" cy="12" r="10" />
         </svg>
       </a>
+      <div class="ml-3">
+        {% include 'base/lang.html' %}
+      </div>
     </div>
   </div>
 </nav>

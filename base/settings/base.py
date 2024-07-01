@@ -54,6 +54,7 @@ MIDDLEWARE = [
     "django_htmx.middleware.HtmxMiddleware",
     "maintenance_mode.middleware.MaintenanceModeMiddleware",
     "django_minify_html.middleware.MinifyHtmlMiddleware",
+    "main.middleware.BlockIPMiddleware",
 ]
 
 ROOT_URLCONF = "base.urls"
@@ -69,7 +70,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "main.context_processors.app_name",
+                "main.context_processors.app",
+                "django.template.context_processors.i18n",
             ],
         },
     },

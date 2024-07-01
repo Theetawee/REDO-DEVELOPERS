@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Testimony, CompanyProfile, CompanyRole
+from .models import Testimony, CompanyProfile, CompanyRole, IPGeolocation
 from django import forms
 from base.widget import CheckboxSelectMultipleWidget
 
@@ -24,3 +24,4 @@ admin.site.register(CompanyProfile, CompanyProfileAdmin)
 
 admin.site.register(Testimony)
 admin.site.register(CompanyRole)
+admin.site.register(IPGeolocation)

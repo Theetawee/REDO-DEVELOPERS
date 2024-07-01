@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include 'base/fonts.html' %}
+    <title>Unfortunately, Access is Blocked</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+    <script src="{% static 'js/styles.js' %}"></script>
+  </head>
+
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+      <h1 class="text-center text-red-500 text-2xl mb-4">
+        Unfortunately, Access is Blocked
+      </h1>
+      <p class="text-center text-gray-700 mb-8">
+        You has been blocked from accessing this website. Please
+        contact support for further assistance.
+      </p>
+      <div class="flex justify-center">
+        <a
+          data-ripple-light="true"
+          href="mailto:support@example.com"
+          class="bg-primary-700 hover:bg-primary-700 text-white py-2 px-4 rounded inline-block text-center transition duration-300 ease-in-out"
+          >Contact Support</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
