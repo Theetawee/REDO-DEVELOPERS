@@ -84,3 +84,10 @@ def carrers_view(request):
     description = "Join our dynamic team of professionals. We're always looking for talented individuals to join our team. Apply today and let's build a strong and rewarding career together!"
     context = {"title": title, "description": description}
     return render(request, "main/carrers.html", context)
+
+
+def investor_relations(request):
+    title = f"Investor Relations | {settings.APP_NAME}"
+    description = f"Explore the comprehensive range of services offered by {settings.APP_NAME} We specialize in innovative solutions tailored to meet your needs."
+    context = {"title": title, "description": description}
+    return render(request, "main/investors.html", context)

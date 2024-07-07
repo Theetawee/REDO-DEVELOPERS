@@ -1,38 +1,39 @@
-{% extends 'base/base.html' %} {% block content %}
+{% extends 'base/base.html' %} 
+{% block content %}
 
 <section class="py-10 px-4">
   <div class="max-w-screen-lg text-center mx-auto">
-    <h1 class="text-4xl  text-gray-700">
-      Meet our talented and dedicated leaders and team members at Redo
-      Developers Inc
+    <h1 class="text-4xl font-semibold text-gray-700">
+      Meet the Talented and Dedicated Leaders of Redo Developers Inc.
     </h1>
+    <p class="mt-4 text-lg text-gray-500">
+      Our team of experienced professionals is committed to delivering exceptional results and driving innovation in the industry.
+    </p>
   </div>
   <div class="py-20 max-w-screen-lg mx-auto">
-    <div class="flex items-center justify-between gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {% for profile in profiles %}
-
-      <a class="block bg-white shadow rounded-xl border border-gray-100 p-6" href="{% url 'detail' profile.slug %}"
-        ><div class="flex items-center flex-wrap gap-6">
+      <a class="block bg-white shadow-lg rounded-xl border border-gray-100 p-6 transform transition duration-300 hover:scale-105" href="{% url 'detail' profile.slug %}">
+        <div class="flex flex-col items-center">
           <img
             src="{{profile.image}}"
-            class="w-40 h-40 mx-auto object-cover rounded-full bg-gray-100 text-gray-100"
-            alt="Khaotungkulmethee Pattawee Drake" />
-          <div class="text-start">
-            <h2 class="text-2xl text-gray-800">{{profile.name}}</h2>
-            <div class="flex items-center  gap-4 flex-wrap">
+            class="w-40 h-40 object-cover rounded-full bg-gray-100 text-gray-100"
+            alt="{{ profile.name }}" />
+          <div class="mt-4 text-center">
+            <h2 class="text-2xl font-semibold text-gray-800">{{ profile.name }}</h2>
+            <div class="mt-2 flex items-center justify-center gap-2 flex-wrap">
               {% for position in profile.position.all %}
               <span class="flex items-center">
                 <div class="h-1 w-1 bg-gray-600 mr-1 rounded-full"></div>
-              <p class="text-gray-600 capitalize text-sm">
-                {{position}}
-              </p>
+                <p class="text-gray-600 capitalize text-sm">
+                  {{ position }}
+                </p>
               </span>
               {% endfor %}
             </div>
           </div>
-        </div></a
-      >
-
+        </div>
+      </a>
       {% endfor %}
     </div>
   </div>
