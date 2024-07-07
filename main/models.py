@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.urls import reverse
 from django.utils.text import slugify
 from django.db.models.signals import post_save
 from django.dispatch import receiver
@@ -22,6 +23,7 @@ class CompanyProfile(models.Model):
     )
     slug = models.SlugField(blank=True, null=True, max_length=255)
     template_name = models.CharField(max_length=255, default="default")
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
@@ -32,6 +34,9 @@ class CompanyProfile(models.Model):
             return self.profile_image.url
         else:
             return f"{settings.STATIC_URL}/images/default.webp"
+
+    def get_absolute_url(self):
+        return reverse("profile_detail", kwargs={"slug": self.slug})
 
 
 class Testimony(models.Model):

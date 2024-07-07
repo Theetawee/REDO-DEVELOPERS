@@ -3,12 +3,12 @@ from django.urls import include, path, re_path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.sitemaps.views import sitemap
-from base.sitemaps import StaticViewSitemap
+from base.sitemaps import StaticViewSitemap, ProfileSitemap
 from django.views.generic.base import TemplateView
 from base.utils import service_worker, manifest, offline
 from django.conf.urls.i18n import i18n_patterns
 
-sitemaps = {"others": StaticViewSitemap}
+sitemaps = {"others": StaticViewSitemap, "profiles": ProfileSitemap}
 
 
 urlpatterns = [
