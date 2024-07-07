@@ -60,11 +60,15 @@ def company_services(request):
 
 
 def contact_us(request):
-    if request.POST:
+    if request.method == "POST":
+        name = request.POST.get("name")
         email = request.POST.get("email")
-        message = request.POST.get("message")
+        reason = request.POST.get("reason")
         subject = request.POST.get("subject")
-        msg = f"Email from {email}\n {message}"
+        message = request.POST.get("message")
+
+        msg = f"Email from: {name}\nEmail: {email}\nReason: {reason}\n\nMessage:\n{message}"
+
         try:
             send_mail(subject, msg, email, [settings.EMAIL_HOST_USER])
             messages.success(request, "Email sent successfully")

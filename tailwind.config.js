@@ -23,16 +23,17 @@ module.exports = {
         },
 
         gray: {
-          50: "#f2f2f2",
-          100: "#e6e6e6",
-          200: "#cccccc",
-          300: "#b3b3b3",
-          400: "#999999",
-          500: "#808080",
-          600: "#666666",
-          700: "#4d4d4d",
-          800: "#333333",
-          900: "#1a1a1a",
+          50: "#ffffff",
+          100: "#efefef",
+          200: "#dcdcdc",
+          300: "#bdbdbd",
+          400: "#989898",
+          500: "#7c7c7c",
+          600: "#656565",
+          700: "#525252",
+          800: "#464646",
+          900: "#3d3d3d",
+          950: "#292929",
         },
         secondary: {
           50: "#eff5fe",
@@ -53,20 +54,7 @@ module.exports = {
   plugins: [
     require("flowbite/plugin"),
 
-    plugin(function ({ addVariant, e, postcss }) {
-      addVariant("firefox", ({ container, separator }) => {
-        const isFirefoxRule = postcss.atRule({
-          name: "-moz-document",
-          params: "url-prefix()",
-        });
-        isFirefoxRule.append(container.nodes);
-        container.append(isFirefoxRule);
-        isFirefoxRule.walkRules((rule) => {
-          rule.selector = `.${e(
-            `firefox${separator}${rule.selector.slice(1)}`
-          )}`;
-        });
-      });
-    }),
+    require('@tailwindcss/forms'),
+
   ],
 };
