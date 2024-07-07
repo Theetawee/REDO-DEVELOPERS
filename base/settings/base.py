@@ -24,6 +24,7 @@ AUTH_USER_MODEL = "accounts.Account"
 # Application definition
 
 INSTALLED_APPS = [
+    "livesync",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "livesync.core.middleware.DjangoLiveSyncMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.locale.LocaleMiddleware",
@@ -58,6 +60,9 @@ MIDDLEWARE = [
     "django_minify_html.middleware.MinifyHtmlMiddleware",
     "main.middleware.BlockIPMiddleware",
 ]
+
+DJANGO_LIVESYNC = {"PORT": 8000}
+
 
 ROOT_URLCONF = "base.urls"
 
